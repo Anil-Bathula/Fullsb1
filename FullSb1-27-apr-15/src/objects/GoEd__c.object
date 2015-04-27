@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Application_Fee_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Application Fee Completed</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Co_signer_One_Information_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Co-signer One Information Completed</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Co_signer_Two_Information_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Co-signer Two Information Completed</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Finance__c</fullName>
+        <label>Finance</label>
+        <referenceTo>Opportunity_Finance__c</referenceTo>
+        <relationshipLabel>GoEd Details</relationshipLabel>
+        <relationshipName>GoEd_Details</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Application_Completed_Date__c</fullName>
+        <label>GoEd Application Completed Date</label>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Application_Fee_Paid_Date__c</fullName>
+        <label>GoEd Application Fee  Paid Date</label>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Application_Fee_Paid__c</fullName>
+        <formula>Finance__r.GoEd_Application_Fee_Paidx__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GoEd Application Fee Paid</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Application_Fee_Waived__c</fullName>
+        <formula>Finance__r.GoEd_Application_Fee_Waived__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Application Fee Waived</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_BBA_Financial_Aid__c</fullName>
+        <formula>Finance__r.BBA_Financial_Aid__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Financial Aid</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_BBA_Interest_Free_Fin_Aid__c</fullName>
+        <formula>Finance__r.GoEd_Interest_Free_Fin_Aid__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GoEd Interest Free Fin. Aid</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_BBA_Merit_Based_Scholarship__c</fullName>
+        <formula>Finance__r.BBA_Merit_Based_Scholarship__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Merit Based Scholarship</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Address_Country_of_Citizenship__c</fullName>
+        <label>Address (Country of Citizenship)</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Address_Country_of_Residence__c</fullName>
+        <label>Address (Country of Residence)</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_COC_Address_State__c</fullName>
+        <label>State (Country of Citizenship)</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_COR_Address_State__c</fullName>
+        <label>State (Country of Residence)</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_City_Country_of_Citizenship__c</fullName>
+        <label>City (Country of Citizenship)</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_City_Country_of_Residence__c</fullName>
+        <label>City (Country of Residence)</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Country_of_Citizenship__c</fullName>
+        <description>to hold country of citizen ship of the co-signer 1</description>
+        <label>Country of CitizenShip</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details (Country of CitizenShip)</relationshipLabel>
+        <relationshipName>GoEd_Detailsf9bt</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Country_of_Residence__c</fullName>
+        <label>Country of Residence</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details (Country of Residence)</relationshipLabel>
+        <relationshipName>GoEd_Details5</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Current_Last_Employer__c</fullName>
+        <label>Current / Last Employer</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Date_of_Birth__c</fullName>
+        <label>Date of Birth</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Drivers_License_Issuing_Country__c</fullName>
+        <label>Drivers License - Issuing Country</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details (Drivers License - Issuing Country)</relationshipLabel>
+        <relationshipName>GoEd_Details7</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Drivers_License_Number__c</fullName>
+        <label>Drivers License Number</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_E_Mail__c</fullName>
+        <label>E-Mail</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_First_Name__c</fullName>
+        <label>First Name</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Home_Phone__c</fullName>
+        <label>Home Phone</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Last_Name__c</fullName>
+        <label>Last Name</label>
+        <length>80</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Middle_Name__c</fullName>
+        <label>Middle Name</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Mobile_Phone__c</fullName>
+        <label>Mobile Phone</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_National_ID_Number_Issuing_Coun__c</fullName>
+        <label>National ID Number - Issuing Country</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details (National ID Number - Issuing Country)</relationshipLabel>
+        <relationshipName>GoEd_Details9</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_National_ID_Number__c</fullName>
+        <label>National ID Number</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Nationality_Primary_Passport__c</fullName>
+        <label>Nationality (Primary Passport)</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details (Nationality (Primary Passport))</relationshipLabel>
+        <relationshipName>GoEd_Detailsj0k3</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Nationality_Secondary_Passport__c</fullName>
+        <label>Nationality (Secondary Passport)</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details (Nationality (Secondary Passport))</relationshipLabel>
+        <relationshipName>GoEd_Detailsj0vQ</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Passport_Number_Primary_Passpor__c</fullName>
+        <label>Passport Number (Primary Passport)</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Passport_Number_Secondary_Passp__c</fullName>
+        <label>Passport Number (Secondary Passport)</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Post_Code_Country_of_Birth__c</fullName>
+        <label>Post Code - (Country of Citizenship)</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Post_Code_Country_of_Residence__c</fullName>
+        <label>Post Code - (Country of Residence)</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Relationship_with_Loan_Applican__c</fullName>
+        <label>Relationship with Loan Applicant</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Mother</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Father</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sister</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Brother</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Grandmother</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Grandfather</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aunt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Uncle</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO1_Social_Security_Number_SSN__c</fullName>
+        <label>Social Security Number (SSN)</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Address_Country_of_Citizenship__c</fullName>
+        <label>Address (Country of Citizenship)</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Address_Country_of_Residence__c</fullName>
+        <label>Address (Country of Residence)</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_COC_Address_State__c</fullName>
+        <label>State (Country of Citizenship)</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_COR_Address_State__c</fullName>
+        <label>State (Country of Residence)</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_City_Country_of_Citizenship__c</fullName>
+        <label>City (Country of Citizenship)</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_City_Country_of_Residence__c</fullName>
+        <label>City (Country of Residence)</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Country_of_Citizenship__c</fullName>
+        <description>to hold place of birth or country of citizenship of co signer 2</description>
+        <label>Country of CitizenShip</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details (Country of CitizenShip)</relationshipLabel>
+        <relationshipName>GoEd_Detailsf9cS</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Country_of_Residence__c</fullName>
+        <label>Country of Residence</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details (Country of Residence)</relationshipLabel>
+        <relationshipName>GoEd_Details6</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Current_Last_Employer__c</fullName>
+        <label>Current / Last Employer</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Date_of_Birth__c</fullName>
+        <label>Date of Birth</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Drivers_License_Issuing_Country__c</fullName>
+        <label>Drivers License - Issuing Country</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details (Drivers License - Issuing Country)</relationshipLabel>
+        <relationshipName>GoEd_Details8</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Drivers_License_Number__c</fullName>
+        <label>Drivers License Number</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_E_Mail__c</fullName>
+        <label>E-Mail</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_First_Name__c</fullName>
+        <label>First Name</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Home_Phone__c</fullName>
+        <label>Home Phone</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Last_Name__c</fullName>
+        <label>Last Name</label>
+        <length>80</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Middle_Name__c</fullName>
+        <label>Middle Name</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Mobile_Phone__c</fullName>
+        <label>Mobile Phone</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_National_ID_Number_Issuing_Coun__c</fullName>
+        <label>National ID Number - Issuing Country</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details (National ID Number - Issuing Country)</relationshipLabel>
+        <relationshipName>GoEd_Detailsj0Sn</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_National_ID_Number__c</fullName>
+        <label>National ID Number</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Nationality_Primary_Passport__c</fullName>
+        <label>Nationality (Primary Passport)</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details (Nationality (Primary Passport))</relationshipLabel>
+        <relationshipName>GoEd_Detailsj0oe</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Nationality_Secondary_Passport__c</fullName>
+        <label>Nationality (Secondary Passport)</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details (Nationality (Secondary Passport))</relationshipLabel>
+        <relationshipName>GoEd_Detailsj0vB</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Passport_Number_Primary_Passpor__c</fullName>
+        <label>Passport Number (Primary Passport)</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Passport_Number_Secondary_Passp__c</fullName>
+        <label>Passport Number (Secondary Passport)</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Post_Code_Country_of_Birth__c</fullName>
+        <label>Post Code - (Country of Citizenship)</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Post_Code_Country_of_Residence__c</fullName>
+        <label>Post Code - (Country of Residence)</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Relationship_with_Loan_Applican__c</fullName>
+        <label>Relationship with Loan Applicant</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Mother</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Father</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sister</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Brother</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Grandmother</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Grandfather</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aunt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Uncle</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_CO2_Social_Security_Number_SSN__c</fullName>
+        <label>Social Security Number (SSN)</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Campus__c</fullName>
+        <formula>Finance__r.Opportunity__r.Campus_parsed_from_Program__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Campus</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Country_Of_Citizenship__c</fullName>
+        <description>to hold country of citizen ship of the student</description>
+        <label>Country of CitizenShip</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details (Country of CitizenShip)</relationshipLabel>
+        <relationshipName>GoEd_Detailsf9b5</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Currency__c</fullName>
+        <formula>Finance__r.Program_Currency__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Currency</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Hult_Financial_Aid__c</fullName>
+        <formula>Finance__r.Hult_Financial_Aid__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hult Financial Aid</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Loan_Amount_Rate__c</fullName>
+        <formula>Finance__r.Go_Ed_Loan_Amount_First_Rate_USD__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GoEd Loan Amount Rate</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Loan_Amount_UG__c</fullName>
+        <formula>Finance__r.BBA_GoEd_Loan_Year_1__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Yearly amount pulled from &quot;GoEd Loan - Year 1&quot; field in finance tab</inlineHelpText>
+        <label>GoEd Loan Amount - UG (Local)</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Loan_Amount_USD__c</fullName>
+        <formula>Finance__r.Go_Ed_Loan_Amount_USD__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Use this field if student campus is located in US/UAE/CN</inlineHelpText>
+        <label>GoEd Loan Amount - PG (USD)</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Loan_Amount__c</fullName>
+        <formula>Finance__r.Go_Ed_Loan_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Use this field if student campus is located in US/UK</inlineHelpText>
+        <label>GoEd Loan Amount - PG (Local)</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Merit_Based_Scholarship__c</fullName>
+        <formula>Finance__r.Scholarship_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Merit Based Scholarship</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_PGScholarship_Fin_Aid_Total_incl_Go__c</fullName>
+        <formula>+(Finance__r.Scholarship_Amount__c +  Finance__r.Hult_Financial_Aid__c +  Finance__r.Fin_Aid_Hotel_and_Flight__c +  Finance__r.GoEd_Interest_Free_Fin_Aid__c +  Finance__r.Go_Ed_Loan_Amount__c  ) /  Finance__r.Total_Tuition_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Scholarship &amp; Fin. Aid Total (incl GoEd)</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_PG_Interest_Free_Fin_Aid__c</fullName>
+        <formula>Finance__r.GoEd_Interest_Free_Fin_Aid__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GoEd Interest Free Fin. Aid</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_PG_Merit_Based_Scholarship__c</fullName>
+        <formula>Finance__r.Scholarship_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Merit Based Scholarship</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Program_Fee_Year_1__c</fullName>
+        <formula>Finance__r.BBA_Program_Fee_Year_1__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Program Fee - Year 1</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Program__c</fullName>
+        <formula>Finance__r.Opportunity__r.Program__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Program</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_S_Drivers_License_Issuing_Country__c</fullName>
+        <label>Drivers License - Issuing Country</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details (Drivers License - Issuing Country)</relationshipLabel>
+        <relationshipName>GoEd_Details4</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_S_National_ID_Number_Issuing_Countr__c</fullName>
+        <label>National ID Number - Issuing Country</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details (National ID Number - Issuing Country)</relationshipLabel>
+        <relationshipName>GoEd_Details3</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_S_Passport_Number_Primary_Passport__c</fullName>
+        <label>Passport Number (Primary Passport)</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_S_Passport_Number_Secondary_Passpor__c</fullName>
+        <label>Passport Number (Secondary Passport)</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_S_Post_Code_Country_of_Residence__c</fullName>
+        <label>Post Code - (Country of Residence)</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Scholarship_Fin_Aid_Total_incl_GoEd__c</fullName>
+        <formula>( Finance__r.BBA_Scholarship_Financial_Aid_Total_1__c  +  Finance__r.BBA_GoEd_Loan_Year_1__c ) /  Finance__r.BBA_Program_Fee_Year_1__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Scholarship &amp; Fin. Aid Total (incl GoEd)</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_Address_Country_of_Birth__c</fullName>
+        <label>Address (Country of Citizenship)</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_Address_Country_of_Residenc__c</fullName>
+        <label>Address (Country of Residence)</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_COC_Address_State__c</fullName>
+        <label>State (Country of Citizenship)</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_COR_Address_State__c</fullName>
+        <label>State (Country of Residence)</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_City_Country_of_Citizenship__c</fullName>
+        <label>City (Country of Citizenship)</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_City_of_Residence__c</fullName>
+        <label>City (Country of Residence)</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_Country_of_Residence__c</fullName>
+        <label>Country of Residence</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details (Student - Country of Residence)</relationshipLabel>
+        <relationshipName>GoEd_Details2</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_Current_Last_Employer__c</fullName>
+        <label>Current / Last Employer</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_Date_of_Birth__c</fullName>
+        <label>Date of Birth</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_Drivers_License_Number__c</fullName>
+        <label>Drivers License Number</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_E_Mail__c</fullName>
+        <label>E-Mail</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_First_Name__c</fullName>
+        <label>First Name</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_Home_Phone__c</fullName>
+        <label>Home Phone</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_ID__c</fullName>
+        <formula>Finance__r.Student_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Student ID</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_Last_Name__c</fullName>
+        <label>Last Name</label>
+        <length>80</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_Middle_Name__c</fullName>
+        <label>Middle Name</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_Mobile_Phone__c</fullName>
+        <label>Mobile Phone</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_National_ID_Number__c</fullName>
+        <label>National ID Number</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_Nationality_1__c</fullName>
+        <label>Nationality (Primary Passport)</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details</relationshipLabel>
+        <relationshipName>GoEd_Details</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_Nationality_2__c</fullName>
+        <label>Nationality (Secondary Passport)</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>GoEd Details (Nationality (as per second passport))</relationshipLabel>
+        <relationshipName>GoEd_Details1</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_Post_Code_Country_of_Birth__c</fullName>
+        <label>Post Code - (Country of Citizenship)</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Student_Social_Security_Number_SSN__c</fullName>
+        <label>Social Security Number (SSN)</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Go_Ed_Loan_Amount_Date_c__c</fullName>
+        <formula>Finance__r.Go_Ed_Loan_Amount_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GoEd Loan Amount (Date)</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Personal_Information_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Personal Information Completed</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Program_Name__c</fullName>
+        <formula>Finance__r.Opportunity__r.Program__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Program Name</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Upload_Documents_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Upload Documents Completed</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>GoEd</label>
+    <nameField>
+        <displayFormat>Goed-{00000000}</displayFormat>
+        <label>GoEd Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>GoEd Details</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

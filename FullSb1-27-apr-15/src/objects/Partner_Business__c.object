@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This Object serves as the basis for Performance and Commission management for Hult Partners</description>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Commission_BBA_USD__c</fullName>
+        <label>Commission BBA (USD)</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Commission_EMBA_USD__c</fullName>
+        <label>Commission EMBA (USD)</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Commission_MBA_USD__c</fullName>
+        <label>Commission MBA (USD)</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Commission_Masters_USD__c</fullName>
+        <label>Commission Masters (USD)</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Last_Year_In_Class_BBA__c</fullName>
+        <label>Last Year In-Class BBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Last_Year_In_Class_EMBA__c</fullName>
+        <label>Last Year In-Class EMBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Last_Year_In_Class_MBA__c</fullName>
+        <label>Last Year In-Class MBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Last_Year_In_Class_Masters__c</fullName>
+        <label>Last Year In-Class Masters</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Last_Year_Partials_BBA__c</fullName>
+        <label>Last Year Partials+ BBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Last_Year_Partials_EMBA__c</fullName>
+        <label>Last Year Partials+ EMBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Last_Year_Partials_MBA__c</fullName>
+        <label>Last Year Partials+ MBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Last_Year_Partials_Masters__c</fullName>
+        <label>Last Year Partials+ Masters</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Partner_Business__c</fullName>
+        <description>This master-detail relationship is used to manage and control the partner&apos;s Actuals and Targets</description>
+        <label>Partner Business</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Partner Business</relationshipLabel>
+        <relationshipName>Partner_Business</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>Recruitment_Year__c</fullName>
+        <label>Recruitment Year</label>
+        <picklist>
+            <picklistValues>
+                <fullName>2013-2014</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2014-2015</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2015-2016</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2016-2017</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2017-2018</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Size_Of_Business_BBA__c</fullName>
+        <label>Partner Performance Forecast BBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Size_of_Business_EMBA__c</fullName>
+        <label>Partner Performance Forecast EMBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Size_of_Business_MBA__c</fullName>
+        <label>Partner Performance Forecast MBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Size_of_Business_Masters__c</fullName>
+        <label>Partner Performance Forecast Masters</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Target_Confirmed_BBA__c</fullName>
+        <label>Target Confirmed BBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Target_Confirmed_EMBA__c</fullName>
+        <label>Target Confirmed EMBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Target_Confirmed_MBA__c</fullName>
+        <label>Target Confirmed MBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Target_Confirmed_Masters__c</fullName>
+        <label>Target Confirmed Masters</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Target_Partials_BBA__c</fullName>
+        <label>Target Partials+ BBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Target_Partials_EMBA__c</fullName>
+        <label>Target Partials+ EMBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Target_Partials_MBA__c</fullName>
+        <label>Target Partials+ MBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Target_Partials_Masters__c</fullName>
+        <label>Target Partials+ Masters</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Total_Business_with_Hult_Potential__c</fullName>
+        <label>Total Forecast with Hult Potential</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Total_Commission__c</fullName>
+        <formula>Commission_BBA_USD__c+
+Commission_MBA_USD__c+
+Commission_EMBA_USD__c+
+Commission_Masters_USD__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Commission</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Size_of_Business__c</fullName>
+        <formula>Size_Of_Business_BBA__c + Size_of_Business_Masters__c + Size_of_Business_EMBA__c + Size_of_Business_MBA__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Partner Performance Forecast</label>
+        <precision>18</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>YTD_Confirmed_BBA__c</fullName>
+        <label>YTD Confirmed BBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>YTD_Confirmed_EMBA__c</fullName>
+        <label>YTD Confirmed EMBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>YTD_Confirmed_MBA__c</fullName>
+        <label>YTD Confirmed MBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>YTD_Confirmed_Masters__c</fullName>
+        <label>YTD Confirmed Masters</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>YTD_Partials_BBA__c</fullName>
+        <label>YTD Partials+ BBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>YTD_Partials_EMBA__c</fullName>
+        <label>YTD Partials+ EMBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>YTD_Partials_MBA__c</fullName>
+        <label>YTD Partials+ MBA</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>YTD_Partials_Masters__c</fullName>
+        <label>YTD Partials+ Masters</label>
+        <precision>5</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>of_Business_with_Hult_Potential__c</fullName>
+        <formula>if(Total_Size_of_Business__c&gt;0,Total_Business_with_Hult_Potential__c / Total_Size_of_Business__c, NULL)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>% of Forecast with Hult Potential</label>
+        <precision>18</precision>
+        <scale>0</scale>
+        <type>Percent</type>
+    </fields>
+    <label>Partner Business</label>
+    <nameField>
+        <displayFormat>A-{000000}</displayFormat>
+        <label>Partner Business Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Partner Business</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

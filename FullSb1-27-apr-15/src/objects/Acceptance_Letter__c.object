@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Acceptance_Letter__c</fullName>
+        <label>Acceptance Letter for:</label>
+        <length>20</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Application__c</fullName>
+        <label>Application</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Acceptance Letters</relationshipLabel>
+        <relationshipName>Acceptance_Letters</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Date_Letter_Sent_Attached__c</fullName>
+        <label>Date Letter Sent/Attached</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Letter_Title__c</fullName>
+        <label>Letter Title</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <label>Acceptance Letter</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>AL-{000000}</displayFormat>
+        <label>Acceptance Letter  Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Acceptance Letters</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

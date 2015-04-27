@@ -1,0 +1,129 @@
+<apex:page controller="PresenationCustomTemplate" cache="false" action="{!preparePresentationList}" showHeader="false" sidebar="false" renderAs="pdf" ><!-- renderAs="pdf" -->
+    <apex:form >
+        <apex:pageBlock >
+            <apex:variable id="recordsCounter" var="i" value="{!0}" />
+            <apex:repeat value="{!presentationList}" var="pl">
+
+                <apex:outputPanel layout="none" rendered="{! IF((mod(i,2)) == 0, true, false)}" >
+                    <table id="topTable" width="100%" border="0" style="margin-top:1em; font-family: Cambria, serif; font-size: 10.5pt; padding: 10px" class="body">
+                        <tr style="margin-bottom: 50px;">
+                            <td width="80%" style="font-size: 12pt;">
+                                {!pl.JSPresent__Application__r.Account_Name__c} - {!pl.JSPresent__Application__r.Job_Title__c}
+                                <br/>
+                                <br/>
+                            </td>
+                            <td align="right" valign="top" width="20%">
+                                <apex:image value="{!$Resource.HultTemplateLogo}" width="260" height="130"/>
+                            </td>
+                        </tr>
+                    </table>
+                </apex:outputPanel>
+
+                <p><table id="body" width="720px" border="0" style="margin-top:5px; font-family: Cambria, serif; font-size: 10.5pt; padding: 5px" class="body">
+                    <tr style="margin-bottom: 40px;">
+                        <td width="100%">
+                            <b><apex:outputPanel rendered="{!pl.JSPresent__Contact__r.FirstName != null}">{!pl.JSPresent__Contact__r.FirstName}</apex:outputPanel>
+                            <apex:outputPanel rendered="{!pl.JSPresent__Contact__r.LastName != null}">&nbsp;{!pl.JSPresent__Contact__r.LastName}</apex:outputPanel></b>
+
+                            <br/><apex:outputPanel rendered="{!pl.JSPresent__Contact__r.Email != null}">{!pl.JSPresent__Contact__r.Email}</apex:outputPanel>
+
+                            <apex:outputPanel rendered="{!pl.JSPresent__Contact__r.Secondary_Email__c != null && pl.JSPresent__Contact__r.Email != null}">
+                                &nbsp;&nbsp;<b>&bull;</b>&nbsp;&nbsp;&nbsp;
+                            </apex:outputPanel>
+                            <apex:outputPanel rendered="{!pl.JSPresent__Contact__r.Secondary_Email__c != null}">{!pl.JSPresent__Contact__r.Secondary_Email__c}</apex:outputPanel>
+
+                            <apex:outputPanel rendered="{!
+                                (pl.JSPresent__Contact__r.Email != null && pl.JSPresent__Contact__r.Secondary_Email__c != null && pl.JSPresent__Contact__r.Current_Phone__c != null)
+                                ||
+                                (pl.JSPresent__Contact__r.Email != null && pl.JSPresent__Contact__r.Secondary_Email__c == null && pl.JSPresent__Contact__r.Current_Phone__c != null)
+                            }">&nbsp;&nbsp;<b>&bull;</b>&nbsp;&nbsp;&nbsp;</apex:outputPanel>
+                            <apex:outputPanel rendered="{!pl.JSPresent__Contact__r.Current_Phone__c != null}">{!pl.JSPresent__Contact__r.Current_Phone__c}&nbsp;</apex:outputPanel>
+
+
+                            <apex:outputPanel rendered="{!
+                                (pl.JSPresent__Contact__r.Email != null && pl.JSPresent__Contact__r.Secondary_Email__c != null && pl.JSPresent__Contact__r.Current_Phone__c != null && pl.JSPresent__Contact__r.Current_Location__c != null)
+                                ||
+                                (pl.JSPresent__Contact__r.Email != null && pl.JSPresent__Contact__r.Secondary_Email__c == null && pl.JSPresent__Contact__r.Current_Phone__c != null && pl.JSPresent__Contact__r.Current_Location__c != null)
+                                ||
+                                (pl.JSPresent__Contact__r.Email != null && pl.JSPresent__Contact__r.Secondary_Email__c != null && pl.JSPresent__Contact__r.Current_Phone__c == null && pl.JSPresent__Contact__r.Current_Location__c != null)
+                                ||
+                                (pl.JSPresent__Contact__r.Email != null && pl.JSPresent__Contact__r.Secondary_Email__c == null && pl.JSPresent__Contact__r.Current_Phone__c == null && pl.JSPresent__Contact__r.Current_Location__c != null)
+
+                            }">&nbsp;&nbsp;<b>&bull;</b>&nbsp;&nbsp;&nbsp;</apex:outputPanel>
+                            <apex:outputPanel rendered="{!pl.JSPresent__Contact__r.Current_Location__c != null}">{!pl.JSPresent__Contact__r.Current_Location__c}</apex:outputPanel>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100%" colspan="2" style="border-bottom:1px solid black;"><!-- UNDERLINE HERE 1 --></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%">
+                                <tr>
+                                    <td width="15%" style="font-size: 12pt;">Education</td>
+                                    <td width="85%">
+                                        <apex:outputPanel rendered="{!pl.JSPresent__Contact__r.Program_formatted_for_letters__c != null}">{!pl.JSPresent__Contact__r.Program_formatted_for_letters__c}</apex:outputPanel>
+                                        <apex:outputPanel rendered="{!pl.JSPresent__Contact__r.Program_formatted_for_letters__c != null && pl.JSPresent__Contact__r.Hult_Campus__c != null}">
+                                            &nbsp;&nbsp;<b>&mdash;</b>&nbsp;&nbsp;&nbsp;
+                                        </apex:outputPanel>
+                                        <apex:outputPanel rendered="{!pl.JSPresent__Contact__r.Hult_Campus__c != null}">{!pl.JSPresent__Contact__r.Hult_Campus__c}</apex:outputPanel>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%">
+                                <tr>
+                                    <td valign="top" width="15%" style="font-size: 12pt;">Experience</td>
+
+                                    <td width="85%">
+                                        <apex:outputPanel rendered="{!pl.JSPresent__Contact__r.Work_Experience_Years__c != null}">{!pl.JSPresent__Contact__r.Work_Experience_Years__c} years</apex:outputPanel>
+                                        <br/><apex:outputPanel style="word-wrap:break-word" layout="block" rendered="{!pl.JSPresent__Contact__r.Experience_Industry_LinkedIn__c != null}">Industry:&nbsp; {!mapIndustryExperience[pl.Id]}</apex:outputPanel>
+                                        <br/><apex:outputPanel style="word-wrap:break-word;margin-top:-12px" layout="block" rendered="{!pl.JSPresent__Contact__r.Experience_Function_LinkedIn__c != null}">Function:&nbsp; {!mapFunctionExperience[pl.Id]}</apex:outputPanel>
+
+                                        <apex:variable id="displayLocation" var="isDisplay" value="{!pl.JSPresent__Contact__r.Experience_Location_Countries__c != null}" />
+                                        <br/><apex:outputPanel style="word-wrap:break-word;margin-top:-12px" layout="block" rendered="{!isDisplay}">Location:&nbsp; {!mapExperienceLocation[pl.Id]}</apex:outputPanel>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100%" colspan="2" style="border-bottom:1px solid black;"><!-- UNDERLINE HERE 2 --></td>
+                    </tr>
+                    <tr>
+                         <td>
+                            <table width="100%">
+                                <tr>
+                                    <td valign="top" width="15%" style="font-size: 12pt;">Languages</td>
+                                    <td width="85%">
+                                        <apex:outputPanel style="word-wrap:break-word" layout="block" rendered="{!pl.JSPresent__Contact__r.Native_Languages__c != null}">Native: &nbsp;{!mapNative[pl.Id]}</apex:outputPanel>
+                                        <br/><apex:outputPanel style="word-wrap:break-word; margin-top:-12px" layout="block" rendered="{!pl.JSPresent__Contact__r.Languages__c != null}">Working Proficiency:&nbsp; {!mapWorkingProficiency[pl.Id]}</apex:outputPanel>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100%" colspan="2" style="border-bottom:1px solid black;"><!-- UNDERLINE HERE 3 --></td>
+                    </tr>
+                    <tr>
+                        <td width="100%" colspan="2">
+                            <apex:outputPanel layout="block" rendered="{!pl.JSPresent__Contact__r.ts2__Executive_summary__c != null}" style="height:127px; overflow:Hidden; word-wrap:break-word"><apex:outputField value="{!pl.JSPresent__Contact__r.ts2__Executive_summary__c}"/></apex:outputPanel>
+                        </td>
+                    </tr>
+                </table></p>
+
+                <apex:variable var="i" value="{!i+1}" />
+                <apex:outputPanel layout="none" rendered="{! IF((mod(i,2)) == 0, true, false) && IF(i == plSize, false, true)}" >
+                    <p style="page-break-after: always;"></p>
+                </apex:outputPanel>
+            </apex:repeat>
+
+            <apex:outputPanel style="position:fixed;bottom:0px;left:35%;font-weight:lighter;">corporate.relations@hult.edu</apex:outputPanel>
+
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

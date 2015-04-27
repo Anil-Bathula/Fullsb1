@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>One contact can have many dependents.
+And Each Dependent can be selected for both rotations or only one rotation or no rotations.</description>
+    <enableActivities>true</enableActivities>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>City_of_Birth__c</fullName>
+        <label>City of Birth</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Country_of_Birth__c</fullName>
+        <label>Country of Birth</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>Dependents (Country of Birth)</relationshipLabel>
+        <relationshipName>DependentsBirthCountry</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Country_of_Citizenship__c</fullName>
+        <label>Country of Citizenship</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>Dependentscitizenship</relationshipLabel>
+        <relationshipName>Dependenstcitizenship</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Country_of_Permanent_Residence__c</fullName>
+        <label>Country of Permanent Residence</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>DependentsPermanentResidency</relationshipLabel>
+        <relationshipName>DependentsPermanentResidency</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Birth__c</fullName>
+        <inlineHelpText>Enter your dependent&apos;s birthday</inlineHelpText>
+        <label>Date of Birth</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>First_Name__c</fullName>
+        <label>First Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Gender__c</fullName>
+        <inlineHelpText>LEGAL SPOUSE or DEPENDENT CHILD only.</inlineHelpText>
+        <label>Gender</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Male</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Female</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Have_second_Passport__c</fullName>
+        <defaultValue>false</defaultValue>
+        <inlineHelpText>Do he/she have a second, valid passport from a different country?</inlineHelpText>
+        <label>Have second Passport?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Last_Name__c</fullName>
+        <label>Last Name</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Relationship__c</fullName>
+        <inlineHelpText>LEGAL SPOUSE or DEPENDENT CHILD only.
+
+Do not include fiances, significant others, parents, etc.</inlineHelpText>
+        <label>Relationship</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Spouse</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Child</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Rotation1_VisaTrack__c</fullName>
+        <formula>CASESAFEID(Rotation1__r.Visa_Track__c)</formula>
+        <label>Rotation1 VisaTrack</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Rotation1__c</fullName>
+        <label>Rotation1</label>
+        <referenceTo>Rotation__c</referenceTo>
+        <relationshipLabel>Rotation1Dependents</relationshipLabel>
+        <relationshipName>Dependents</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Rotation2_VisaTrack__c</fullName>
+        <formula>CASESAFEID(Rotation2__r.Visa_Track__c)</formula>
+        <label>Rotation2 VisaTrack</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Rotation2__c</fullName>
+        <label>Rotation2</label>
+        <referenceTo>Rotation__c</referenceTo>
+        <relationshipLabel>Rotation2Dependents</relationshipLabel>
+        <relationshipName>Rotation2Dependents</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Student__c</fullName>
+        <inlineHelpText>Dependents for the selected Students</inlineHelpText>
+        <label>Student</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Dependents</relationshipLabel>
+        <relationshipName>Dependents</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <type>MasterDetail</type>
+    </fields>
+    <label>Dependent</label>
+    <nameField>
+        <displayFormat>Rel-{000000000}</displayFormat>
+        <label>Dependent ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Dependents</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

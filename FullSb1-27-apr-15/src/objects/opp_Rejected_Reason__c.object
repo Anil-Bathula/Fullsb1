@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Hardcode Rejected Reason pick list values of Application. 
+It has been created for Acceptance Letters project.</description>
+    <fields>
+        <fullName>Extended_Text__c</fullName>
+        <description>Harcoded Rejected Reason pick list values</description>
+        <inlineHelpText>Harcoded Rejected Reason pick list values</inlineHelpText>
+        <label>Extended Text</label>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Pick_List_Value__c</fullName>
+        <inlineHelpText>Please Enter the pick list value</inlineHelpText>
+        <label>Pick List Value</label>
+        <length>40</length>
+        <type>Text</type>
+    </fields>
+    <label>opp::Rejected Reason</label>
+</CustomObject>

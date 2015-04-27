@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>AccountingCurrency__c</fullName>
+        <label>Accounting Currency</label>
+        <referenceTo>c2g__codaAccountingCurrency__c</referenceTo>
+        <relationshipLabel>Countries</relationshipLabel>
+        <relationshipName>Countries</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Alpha_2__c</fullName>
+        <externalId>true</externalId>
+        <label>Alpha 2</label>
+        <length>2</length>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Alpha_3__c</fullName>
+        <label>Alpha 3</label>
+        <length>3</length>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Calling_Code__c</fullName>
+        <label>Calling Code</label>
+        <precision>4</precision>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Calling_Code_secondary__c</fullName>
+        <label>Calling Code (secondary)</label>
+        <precision>4</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Country_Code__c</fullName>
+        <label>Country Code</label>
+        <length>2</length>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Country_Code_for_PaytoStudy__c</fullName>
+        <label>Country Code for PaytoStudy</label>
+        <length>4</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Flags__c</fullName>
+        <label>Flags</label>
+        <length>32768</length>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IsoCode__c</fullName>
+        <formula>AccountingCurrency__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IsoCode</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Len_CC__c</fullName>
+        <formula>Calling_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Len CC</label>
+        <precision>18</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>MSN__c</fullName>
+        <label>MSN</label>
+        <precision>2</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Name_Lower_Case__c</fullName>
+        <formula>LOWER(Name)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Name (Lower Case)</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Nationality__c</fullName>
+        <description>To store this country nationality</description>
+        <label>Nationality</label>
+        <length>55</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Prefix_011_not_required_for_five9__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Prefix 011 not required for five9</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <label>Region</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Asia</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lat Am</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>North Am</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Eurasia</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Africa</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Middle East</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>South Asia</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LON EUR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LUZ EUR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>North Am BOS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>North Am SFO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Sub_Region__c</fullName>
+        <label>Sub Region</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Africa</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Eastern Europe</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Greater China</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lat Am</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Middle East</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nor Am</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>North East Asia</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>North Europe</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pacific Islands</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rest of Asia</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rest of MEA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>South Asia</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>South East Asia</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>South Europe</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>North AM SFO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>North AM BOS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_Boston_MFIN__c</fullName>
+        <label>Visa 1b Bottleneck-Boston MFIN</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_Boston_MIB__c</fullName>
+        <label>Visa 1b Bottleneck-Boston MIB</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_Boston_MIM__c</fullName>
+        <label>Visa 1b Bottleneck-Boston MIM</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_Dubai_EMBA__c</fullName>
+        <label>Visa 1b Bottleneck-Dubai EMBA</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_Dubai_MBA__c</fullName>
+        <label>Visa 1b Bottleneck-Dubai MBA</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_Dubai_MIB__c</fullName>
+        <label>Visa 1b Bottleneck-Dubai MIB</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_London_BBA__c</fullName>
+        <label>Visa 1b Bottleneck-London BBA</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_London_EMBA__c</fullName>
+        <label>Visa 1b Bottleneck-London EMBA</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_London_MBA__c</fullName>
+        <label>Visa 1b Bottleneck-London MBA</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_London_MFIN__c</fullName>
+        <label>Visa 1b Bottleneck-London MFIN</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_London_MIB__c</fullName>
+        <label>Visa 1b Bottleneck-London MIB</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_London_MIM__c</fullName>
+        <label>Visa 1b Bottleneck-London MIM</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_San_Francisco_BBA__c</fullName>
+        <label>Visa 1b Bottleneck-San Francisco BBA</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_San_Francisco_MBA__c</fullName>
+        <label>Visa 1b Bottleneck-San Francisco MBA</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_San_Francisco_MFIN__c</fullName>
+        <label>Visa 1b Bottleneck-San Francisco MFIN</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_San_Francisco_MIB__c</fullName>
+        <label>Visa 1b Bottleneck-San Francisco MIB</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_San_Francisco_MIM__c</fullName>
+        <label>Visa 1b Bottleneck-San Francisco MIM</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_San_Francisco_MSE__c</fullName>
+        <label>Visa 1b Bottleneck-San Francisco MSE</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_Shanghai_EMBA__c</fullName>
+        <label>Visa 1b Bottleneck-Shanghai EMBA</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_Shanghai_MBA__c</fullName>
+        <label>Visa 1b Bottleneck-Shanghai MBA</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_Bottleneck_Shanghai_MIB__c</fullName>
+        <label>Visa 1b Bottleneck-Shanghai MIB</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Visa_1b_bottlneck__c</fullName>
+        <label>Visa 1b Bottleneck-Boston MBA</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Weighting__c</fullName>
+        <label>Weighting</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Percent</type>
+    </fields>
+    <label>Country</label>
+    <nameField>
+        <label>Country Name</label>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Countries</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>OBJECT_ID</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+</CustomObject>

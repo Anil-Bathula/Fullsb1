@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>AAM_Validated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>AAM Validated</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Account_Override__c</fullName>
+        <label>Account</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Education</relationshipLabel>
+        <relationshipName>Education</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Application__c</fullName>
+        <label>Application</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Education</relationshipLabel>
+        <relationshipName>Education</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <label>City</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Converted_GPA__c</fullName>
+        <label>Converted GPA</label>
+        <precision>3</precision>
+        <scale>2</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <label>Country</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>Education</relationshipLabel>
+        <relationshipName>Education</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Date_Graduated__c</fullName>
+        <label>Degree completed by</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DegreeDateTo2__c</fullName>
+        <label>DegreeDateTo2</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DegreeSpeciality__c</fullName>
+        <label>Major and/or Speciality</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Degree_Pending__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Degree Pending</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EducationSpeciality__c</fullName>
+        <label>Major and/or Speciality</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>English_Proficiency_Listening__c</fullName>
+        <label>English Proficiency: Listening</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Elementary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>English_Proficiency_Speaking__c</fullName>
+        <label>English Proficiency: Speaking</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Elementary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>English_Proficiency_Writing__c</fullName>
+        <label>English Proficiency: Writing</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Elementary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>English_Proficiency__c</fullName>
+        <label>English Proficiency: Reading</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Elementary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>GPA__c</fullName>
+        <label>Converted GPA(Extra)</label>
+        <length>16</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GraduateDateFrom__c</fullName>
+        <label>Date attended from</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>GraduateDateTo__c</fullName>
+        <label>Date attended to</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>High_School_Attended__c</fullName>
+        <label>High School Attended</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>High_School_Grade_Point_Average__c</fullName>
+        <inlineHelpText>This is the average grade you have obtained at the end of your High School</inlineHelpText>
+        <label>High School Grade Point Average</label>
+        <length>8</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>High_School_SAT_ACT__c</fullName>
+        <label>High School SAT/ACT (if applicable)</label>
+        <length>4</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Highest_Degree_Attained__c</fullName>
+        <label>Degree Attained</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Master&apos;s Degree</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Doctoral Degree</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bachelor&apos;s Degree</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>High School</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Highest_Degree_Attainedcheckbox__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field should only be used by AAM&apos;s to validated what the applicants highest degree attained is.</description>
+        <inlineHelpText>This field should only be used by AAM&apos;s to validated what the applicants highest degree attained is.</inlineHelpText>
+        <label>Highest Degree Attained</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>If_you_are_currently_enrolled_check_the__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>If you are currently enrolled check the</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>International_Baccalaureate_Score__c</fullName>
+        <label>International Baccalaureate Score (if ap</label>
+        <length>4</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Languages_Spoken_Fluently__c</fullName>
+        <label>Languages Spoken Fluently</label>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Max_Original_GPA__c</fullName>
+        <label>Max Original GPA</label>
+        <length>6</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Native_Language__c</fullName>
+        <label>Native Language</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Original_GPA__c</fullName>
+        <label>Original GPA</label>
+        <length>16</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>School_attended_for_Highest_Degree__c</fullName>
+        <label>School attended for Highest Degree</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Undergraduate_School_Attended__c</fullName>
+        <label>School Attended</label>
+        <length>80</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Undergraduate_School_Country__c</fullName>
+        <label>School Country</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>Education (Undergraduate School Country)</relationshipLabel>
+        <relationshipName>Education1</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Verified_Date__c</fullName>
+        <label>Verified Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Verified__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Verified?</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Education</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Account_Override__c</columns>
+        <columns>Application__c</columns>
+        <columns>Date_Graduated__c</columns>
+        <columns>GraduateDateFrom__c</columns>
+        <columns>GraduateDateTo__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{00000000}</displayFormat>
+        <label>Reference #</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Education</pluralLabel>
+    <recordTypes>
+        <fullName>Graduate</fullName>
+        <active>true</active>
+        <label>Graduate</label>
+        <picklistValues>
+            <picklist>English_Proficiency_Listening__c</picklist>
+            <values>
+                <fullName>Elementary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>English_Proficiency_Speaking__c</picklist>
+            <values>
+                <fullName>Elementary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>English_Proficiency_Writing__c</picklist>
+            <values>
+                <fullName>Elementary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>English_Proficiency__c</picklist>
+            <values>
+                <fullName>Elementary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Highest_Degree_Attained__c</picklist>
+            <values>
+                <fullName>Bachelor%27s Degree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Doctoral Degree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High School</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master%27s Degree</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>High_School</fullName>
+        <active>true</active>
+        <label>High School</label>
+        <picklistValues>
+            <picklist>English_Proficiency_Listening__c</picklist>
+            <values>
+                <fullName>Elementary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>English_Proficiency_Speaking__c</picklist>
+            <values>
+                <fullName>Elementary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>English_Proficiency_Writing__c</picklist>
+            <values>
+                <fullName>Elementary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>English_Proficiency__c</picklist>
+            <values>
+                <fullName>Elementary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Highest_Degree_Attained__c</picklist>
+            <values>
+                <fullName>Bachelor%27s Degree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Doctoral Degree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High School</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master%27s Degree</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Undergraduate</fullName>
+        <active>true</active>
+        <label>Undergraduate</label>
+        <picklistValues>
+            <picklist>English_Proficiency_Listening__c</picklist>
+            <values>
+                <fullName>Elementary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>English_Proficiency_Speaking__c</picklist>
+            <values>
+                <fullName>Elementary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>English_Proficiency_Writing__c</picklist>
+            <values>
+                <fullName>Elementary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>English_Proficiency__c</picklist>
+            <values>
+                <fullName>Elementary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Excellent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Good</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Highest_Degree_Attained__c</picklist>
+            <values>
+                <fullName>Bachelor%27s Degree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Doctoral Degree</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>High School</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Master%27s Degree</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>AAM_Validation_for_Bacherlors_Only</fullName>
+        <active>true</active>
+        <description>AAMs can only validate &apos;Bacherlor&apos;s Degree&apos; records. by Daniel Mora</description>
+        <errorConditionFormula>AND(AAM_Validated__c = TRUE,  text(Highest_Degree_Attained__c) &lt;&gt; &quot;Bachelor&apos;s Degree&quot;)</errorConditionFormula>
+        <errorMessage>Only Bachelor&apos;s Degrees can be &apos;AAM Validated&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Enter_GPA</fullName>
+        <active>true</active>
+        <description>This validation is to check the converted GPA field should have value.
+ when highest degree is bachelors and validate__AAM=True.</description>
+        <errorConditionFormula>AND(ISPICKVAL( Highest_Degree_Attained__c ,&quot;Bachelor&apos;s Degree&quot;),AAM_Validated__c=True ,ISNULL(Converted_GPA__c))</errorConditionFormula>
+        <errorMessage>Please enter a Converted GPA value before you validate this record</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>GPA_Must_not_be_more_than_4</fullName>
+        <active>true</active>
+        <description>To restrict the user from entering the GPA value More than 4 and less than 1.
+The GPA value Should be between 1-4</description>
+        <errorConditionFormula>OR(Converted_GPA__c&lt;1,Converted_GPA__c&gt;4)</errorConditionFormula>
+        <errorMessage>Please enter GPA between 1 - 4</errorMessage>
+    </validationRules>
+</CustomObject>

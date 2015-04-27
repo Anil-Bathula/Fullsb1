@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>AAM_Validated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>AAM Validated</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AAM_validate_updater_usedin_code_only__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>this field is used in the code to Exam_ApplicationOwner_Updater trigger. only for code [purpose only.</description>
+        <label>AAM validate updater usedin code only</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Account_Override__c</fullName>
+        <label>Account</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Exams</relationshipLabel>
+        <relationshipName>Exams</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Applicant_Full_Name__c</fullName>
+        <formula>Application__r.First_Name_from_Contact__c &amp; &quot; &quot; &amp; Application__r.Last_Name_from_Contact__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Applicant Name</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Application_Owner__c</fullName>
+        <label>Application Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Exams</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Application_Stage_Auto_Update_FLAG__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Application Stage Auto-Update FLAG</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Application__c</fullName>
+        <label>Application</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Exams</relationshipLabel>
+        <relationshipName>Exams</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>Cognitive__c</fullName>
+        <description>For AAM&apos;s to fill in-score is out of 50</description>
+        <inlineHelpText>For AAM&apos;s to fill in-score is out of 50</inlineHelpText>
+        <label>Cognitive</label>
+        <length>3</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Converter__c</fullName>
+        <label>Converter</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Exams1</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Exam_Date__c</fullName>
+        <label>Test: Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Exam_Listening__c</fullName>
+        <inlineHelpText>Enter Listening score.</inlineHelpText>
+        <label>Test Listening</label>
+        <length>16</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Exam_Location__c</fullName>
+        <label>Test: Location</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Exam_Provider__c</fullName>
+        <label>Test Provider</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Exam_Reading__c</fullName>
+        <inlineHelpText>Enter reading score.</inlineHelpText>
+        <label>Test Reading</label>
+        <length>16</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Exam_Score__c</fullName>
+        <label>Test: Score</label>
+        <length>16</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Exam_Speaking__c</fullName>
+        <inlineHelpText>Enter Speaking score.</inlineHelpText>
+        <label>Test Speaking</label>
+        <length>16</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Exam_Type__c</fullName>
+        <description>Anil.B 25/4/13-Deleted these values :-Apply for test waiver 
+ACT 
+Cambridge Advanced or higher 
+No test required 
+TOEFL or equivalent</description>
+        <label>Test: Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>GMAT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GRE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SAT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ACT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SHL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Master GMAT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BULATS online</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TOEFL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IELTS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cambridge Advanced</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cambridge Proficiency</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cambridge Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cambridge First</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pearson/PTE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TOEIC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>IEMA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BEST</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>UPIBT</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>City &amp; Guilds</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wonderlic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Exam_Writing__c</fullName>
+        <inlineHelpText>Enter writing score.</inlineHelpText>
+        <label>Test Writing</label>
+        <length>16</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>GMAT_Equivalent__c</fullName>
+        <label>GMAT Equivalent</label>
+        <precision>4</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>GRE__c</fullName>
+        <label>GRE Score Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Verbal Reasoning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quantitative Reasoning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Analytical Writing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>IsAdmissionTest__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this is checked-of, it means the test is an admission test.</description>
+        <label>IsAdmissionTest</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsLanguageTest__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If this  is checked-off, this test is language test. This field is for the new online app.</description>
+        <label>IsLanguageTest</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Master_GMAT_Test_Id__c</fullName>
+        <description>This is master gmat Test id comes from www.hult.edu/gmat/</description>
+        <label>Master GMAT Test Id</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Master_GMAT_Test_Type__c</fullName>
+        <description>Master Gmat Test types</description>
+        <label>Master GMAT Test Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Micro</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mini</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Full</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>NeedofTest__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>I need to take my test</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NotScheduledTest__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>I have not scheduled a test date yet</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Outdated_Test_1_to_7_days_FLAG__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Outdated Test +1 to +7 days FLAG</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Outdated_Test_FLAG__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Outdated Test FLAG</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Outdated_Test_Reminder_FLAG__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Outdated Test Reminder FLAG</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Planned_Test_Date__c</fullName>
+        <label>Planned Test Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Planned_Test_Location__c</fullName>
+        <label>Planned Test Location</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Quant__c</fullName>
+        <inlineHelpText>Enter only for GMAT.</inlineHelpText>
+        <label>Quant</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>SHL_Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>SHL Approved</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Stage__c</fullName>
+        <formula>text(Application__r.StageName)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Stage</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Student_ID__c</fullName>
+        <formula>Application__r.App_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Student ID</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>TOEFL_Equivalent__c</fullName>
+        <label>TOEFL Equivalent</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>TakenTest__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>I have already taken my test</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Test_Waiver__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Test Waiver</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Verbal__c</fullName>
+        <inlineHelpText>Enter only for GMAT.</inlineHelpText>
+        <label>Verbal</label>
+        <precision>3</precision>
+        <scale>0</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Verified_Date__c</fullName>
+        <label>Verified Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Verified__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Verified?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Waiver_Reason__c</fullName>
+        <label>Waiver Reason</label>
+        <picklist>
+            <controllingField>Exam_Type__c</controllingField>
+            <picklistValues>
+                <fullName>Fully sponsored</fullName>
+                <controllingFieldValues>GMAT</controllingFieldValues>
+                <controllingFieldValues>GRE</controllingFieldValues>
+                <controllingFieldValues>SAT</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5+ yrs managerial work exp</fullName>
+                <controllingFieldValues>GMAT</controllingFieldValues>
+                <controllingFieldValues>GRE</controllingFieldValues>
+                <controllingFieldValues>SAT</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7+ yrs work exp w/ last year as manager</fullName>
+                <controllingFieldValues>GMAT</controllingFieldValues>
+                <controllingFieldValues>GRE</controllingFieldValues>
+                <controllingFieldValues>SAT</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MFin – Education</fullName>
+                <controllingFieldValues>GMAT</controllingFieldValues>
+                <controllingFieldValues>GRE</controllingFieldValues>
+                <controllingFieldValues>SAT</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Native speaker</fullName>
+                <controllingFieldValues>Cambridge Advanced</controllingFieldValues>
+                <controllingFieldValues>IELTS</controllingFieldValues>
+                <controllingFieldValues>Pearson/PTE</controllingFieldValues>
+                <controllingFieldValues>TOEFL</controllingFieldValues>
+                <controllingFieldValues>TOEIC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education in English</fullName>
+                <controllingFieldValues>Cambridge Advanced</controllingFieldValues>
+                <controllingFieldValues>IELTS</controllingFieldValues>
+                <controllingFieldValues>Pearson/PTE</controllingFieldValues>
+                <controllingFieldValues>TOEFL</controllingFieldValues>
+                <controllingFieldValues>TOEIC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2+ yrs working in English</fullName>
+                <controllingFieldValues>Cambridge Advanced</controllingFieldValues>
+                <controllingFieldValues>IELTS</controllingFieldValues>
+                <controllingFieldValues>Pearson/PTE</controllingFieldValues>
+                <controllingFieldValues>TOEFL</controllingFieldValues>
+                <controllingFieldValues>TOEIC</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>English interview – corporate sponsored</fullName>
+                <controllingFieldValues>TOEFL</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>English interview – appealed</fullName>
+                <controllingFieldValues>TOEFL</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>op_Application_owner__c</fullName>
+        <formula>Application__r.OwnerId</formula>
+        <label>op:Application owner</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>op_Converter__c</fullName>
+        <formula>Application__r.Conversion_Team_Member__c</formula>
+        <label>op:Converter</label>
+        <type>Text</type>
+    </fields>
+    <label>Exam</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Account_Override__c</columns>
+        <columns>Account__c</columns>
+        <columns>Application__c</columns>
+        <columns>Exam_Date__c</columns>
+        <columns>Exam_Location__c</columns>
+        <columns>Exam_Score__c</columns>
+        <columns>Exam_Type__c</columns>
+        <columns>Exam_Provider__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>{00000000}</displayFormat>
+        <label>Reference #</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Exams</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Application__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Exam_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Exam_Location__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Exam_Score__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Exam_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>GRE__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>TakenTest__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>NeedofTest__c</customTabListAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>GMAT_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(GMAT_Equivalent__c &gt; 800, GMAT_Equivalent__c &lt; 200)</errorConditionFormula>
+        <errorMessage>GMAT Equivalent has to fall within the 200-800 range. Please contact your AAM to get this fixed!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Planned_Test_Date_must_be_greater_Today</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISCHANGED(Planned_Test_Date__c) ,Planned_Test_Date__c&lt;TODAY())</errorConditionFormula>
+        <errorMessage>Planned Test Date must be greater than or equal to today&apos;s date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Quant_and_Verbal_validation</fullName>
+        <active>true</active>
+        <description>to prevent percentages out of the 0-100% range. by Daniel Mora.</description>
+        <errorConditionFormula>OR(Verbal__c&lt;0, Verbal__c&gt;1, Quant__c&lt;0,Quant__c&gt;1)</errorConditionFormula>
+        <errorMessage>Quant and Verbal percentages have to fall within the 0-100% range. Please contact your AAM to get this fixed!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SHL_Validation</fullName>
+        <active>true</active>
+        <description>to make sure that when the &apos;SHL Approved&apos; checkbox is ticked, the chosen Test: Type is &apos;SHL&apos;. by Daniel Mora</description>
+        <errorConditionFormula>AND(text(Exam_Type__c)&lt;&gt;&apos;SHL&apos;,  SHL_Approved__c = TRUE)</errorConditionFormula>
+        <errorMessage>if the &apos;SHL Approved&apos; checkbox is ticked, then the Test: Type picklist has to be set to &apos;SHL&apos;. Please contact your AAM to get this fixed!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>TOEFL_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR(TOEFL_Equivalent__c &lt; 0, TOEFL_Equivalent__c &gt; 120)</errorConditionFormula>
+        <errorMessage>TOEFL Equivalent has to fall within the 0-120 range. Please contact your AAM to get this fixed!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Test_Date_must_be_in_past</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(ISCHANGED(Exam_Date__c) ,Exam_Date__c &gt;TODAY())</errorConditionFormula>
+        <errorMessage>Test:Date must be prior to today&apos;s date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Waiver_Reasons_validation</fullName>
+        <active>true</active>
+        <description>If an option is selected in the Waiver Reasons picklist then:
+	test waiver checkbox should be selected
+	test score should be blank
+	Test type should be TOEFL or GMAT
+by Daniel Mora.</description>
+        <errorConditionFormula>And(NOT(ISBLANK( text(Waiver_Reason__c))),
+OR( 
+Test_Waiver__c = FALSE,
+NOT(ISBLANK(Exam_Score__c)), 
+and(text(Exam_Type__c)&lt;&gt;&apos;GMAT&apos;,text(Exam_Type__c)&lt;&gt;&apos;TOEFL&apos;)
+) 
+)</errorConditionFormula>
+        <errorMessage>If an option is selected in the Waiver Reasons picklist, then:
+	Test waiver checkbox should be ticked
+	Test Score should be blank
+	Test type should be TOEFL or GMAT
+Please contact your AAM to get this fixed!</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>test_waiver_validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>And(Test_Waiver__c = TRUE, 
+OR(
+ISBLANK( text(Waiver_Reason__c)),
+NOT(ISBLANK(Exam_Score__c)),
+NOT(ISBLANK( TOEFL_Equivalent__c )),
+NOT(ISBLANK( GMAT_Equivalent__c ))
+ )
+) &amp;&amp; $Profile.Name &lt;&gt; &apos;System Administrator&apos;</errorConditionFormula>
+        <errorMessage>If test is waived then Score, GMAT equivalent and TOEFL equivalent should be blank, AND a Waiver reason should be selected. Please contact your AAM to get this fixed!</errorMessage>
+    </validationRules>
+</CustomObject>

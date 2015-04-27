@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>SFSUP-734 
+This object stores API error logs made to HULT created Webservices.</description>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Callout_Time__c</fullName>
+        <description>Time at which API callout is done.</description>
+        <label>Callout Time</label>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>EndPoint_URL__c</fullName>
+        <description>Endpoint to which API callout is done.</description>
+        <label>EndPoint URL</label>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <description>API Callout failed for which Opportunity</description>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>HULT API Logs</relationshipLabel>
+        <relationshipName>HULT_API_Logs</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status_Code__c</fullName>
+        <description>API Callout failure response - status code.</description>
+        <label>Status Code</label>
+        <length>5</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>API Callout failure Message</description>
+        <label>Status</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <label>HULT API Log</label>
+    <nameField>
+        <displayFormat>Log-{0000000}</displayFormat>
+        <label>API Log Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>HULT API Logs</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

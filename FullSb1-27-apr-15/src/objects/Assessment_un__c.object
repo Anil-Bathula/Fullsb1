@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <fields>
+        <fullName>Appointment_Type__c</fullName>
+        <label>Appointment_Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Campus__c</fullName>
+        <label>Campus</label>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Id_Text__c</fullName>
+        <label>Contact Id Text</label>
+        <length>30</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <label>Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>End_Time__c</fullName>
+        <label>End_Time</label>
+        <length>25</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Location__c</fullName>
+        <label>Location</label>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Processed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <inlineHelpText>Flag to indicate if the staging recording has been processed to Assessment object or not. Marked by backend process.</inlineHelpText>
+        <label>Processed?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Re_Process__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Will be updated by Re-Process button to fire the Assessment_replicate trigger</description>
+        <label>Re-Process</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Request_Endpoint__c</fullName>
+        <label>Request Endpoint</label>
+        <length>250</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Start_Time__c</fullName>
+        <label>Start_Time</label>
+        <length>25</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Status_c__c</fullName>
+        <label>Status__c</label>
+        <picklist>
+            <picklistValues>
+                <fullName>hello</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TT_Event_Type__c</fullName>
+        <label>TT Event Type</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>TimeTrade_Event_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>TimeTrade_Event_ID</label>
+        <length>25</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>User_Email__c</fullName>
+        <label>User Email</label>
+        <type>Email</type>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Assessment_un</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>tsContact__c</fullName>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Assessment_un</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <label>Assessment Stage</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Appointment_Type__c</columns>
+        <columns>TimeTrade_Event_ID__c</columns>
+        <columns>Date__c</columns>
+        <columns>User_Email__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>TT_Event_Type__c</columns>
+        <columns>Status_c__c</columns>
+        <columns>Processed__c</columns>
+        <columns>Contact_Id_Text__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>A-{0000000}</displayFormat>
+        <label>Assessment_un Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Assessment Stage</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Re_Process</fullName>
+        <availability>online</availability>
+        <description>This button is used to reprocess Assessment staging record if ever needed.</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Re-Process</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!requireScript(&quot;/soap/ajax/26.0/connection.js&quot;)} 
+var updateRecord = []; 
+var assetmentStg = new sforce.SObject(&quot;Assessment_un__c&quot;); 
+assetmentStg.id =&quot;{!Assessment_un__c.Id}&quot;; 
+assetmentStg.Re_Process__c = true; 
+updateRecord.push(assetmentStg); 
+result = sforce.connection.update(updateRecord); 
+window.location.reload();</url>
+    </webLinks>
+</CustomObject>

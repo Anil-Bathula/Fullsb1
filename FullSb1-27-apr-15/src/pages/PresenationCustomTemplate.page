@@ -1,0 +1,16 @@
+<apex:page standardController="JSPresent__Presentation__c" extensions="PresenationCustomTemplate" action="{!createPDF}" showHeader="false" sidebar="false" cache="false" >
+    <style>
+        body {
+            overflow: hidden;
+        }
+    </style>
+    <apex:form >
+        <apex:pageBlock title="Custom Template" mode="edit" >
+            <apex:pageMessages id="pageMessages" />
+
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton onclick="window.close();" value="Close" style="float:right"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

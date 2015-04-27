@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Bounce_Rate__c</fullName>
+        <formula>Number_Bounced__c  /  Number_Sent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bounce Rate</label>
+        <precision>18</precision>
+        <scale>1</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Campaign__c</fullName>
+        <label>Campaign</label>
+        <referenceTo>Campaign</referenceTo>
+        <relationshipLabel>Email Results</relationshipLabel>
+        <relationshipName>R00N30000001MXe3EAG</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Click_Through_Rate__c</fullName>
+        <formula>Number_of_Unique_Clicks__c /  Number_Sent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Click Through Rate</label>
+        <precision>18</precision>
+        <scale>1</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Date_Sent__c</fullName>
+        <label>Date Sent</label>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Deliverability_Rate__c</fullName>
+        <formula>Number_Delivered__c /  Number_Sent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Deliverability Rate</label>
+        <precision>18</precision>
+        <scale>1</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>From_Address__c</fullName>
+        <label>From Address</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>From_Name__c</fullName>
+        <label>From Name</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Invalid_Addresses__c</fullName>
+        <label>Invalid Addresses</label>
+        <precision>6</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Number_Bounced__c</fullName>
+        <formula>Number_of_Hard_Bounces__c  +  Number_of_Soft_Bounces__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Number Bounced</label>
+        <precision>18</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Number_Delivered__c</fullName>
+        <formula>Number_Sent__c  -  Number_Bounced__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Number Delivered</label>
+        <precision>18</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Number_Not_Opened__c</fullName>
+        <formula>Number_Delivered__c   -  Number_of_Unique_Opens__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Number Not Opened</label>
+        <precision>18</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Number_Sent__c</fullName>
+        <label>Number Sent</label>
+        <precision>9</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Number_Unsubscribed__c</fullName>
+        <label>Number Unsubscribed</label>
+        <precision>6</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Contacts__c</fullName>
+        <description>Number of contact records.</description>
+        <label>Number of Contacts</label>
+        <precision>6</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Existing_Undeliverables__c</fullName>
+        <label>Number of Existing Undeliverables</label>
+        <precision>6</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Existing_Unsubscribes__c</fullName>
+        <label>Number of Existing Unsubscribes</label>
+        <precision>6</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Hard_Bounces__c</fullName>
+        <description>Number of hard bounces.</description>
+        <label>Number of Hard Bounces</label>
+        <precision>6</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Leads__c</fullName>
+        <description>Number of lead records.</description>
+        <label>Number of Leads</label>
+        <precision>6</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Soft_Bounces__c</fullName>
+        <description>Number of soft bounces.</description>
+        <label>Number of Soft Bounces</label>
+        <precision>6</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Subscribers_Forwarding_Email__c</fullName>
+        <description>Number of subscribers who used Forward to a Friend.</description>
+        <label>Number of Subscribers Forwarding Email</label>
+        <precision>6</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Unique_Clicks__c</fullName>
+        <label>Number of Unique Clicks</label>
+        <precision>6</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Unique_Opens__c</fullName>
+        <label>Number of Unique Opens</label>
+        <precision>6</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Open_Rate__c</fullName>
+        <formula>Number_of_Unique_Opens__c /  Number_Sent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Open Rate</label>
+        <precision>18</precision>
+        <scale>1</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Records_without_Addresses__c</fullName>
+        <label>Records without Addresses</label>
+        <precision>6</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Report_Name__c</fullName>
+        <label>Report Name</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Subject__c</fullName>
+        <label>Subject Line</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Total_Number_of_Records__c</fullName>
+        <label>Total Number of Records</label>
+        <precision>9</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Unsubscribe_Rate__c</fullName>
+        <formula>Number_Unsubscribed__c /  Number_Sent__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Unsubscribe Rate</label>
+        <precision>18</precision>
+        <scale>1</scale>
+        <type>Percent</type>
+    </fields>
+    <label>Email Result</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Mirko</fullName>
+        <columns>NAME</columns>
+        <columns>Campaign__c</columns>
+        <columns>Click_Through_Rate__c</columns>
+        <columns>Date_Sent__c</columns>
+        <columns>Open_Rate__c</columns>
+        <columns>Number_Sent__c</columns>
+        <columns>Number_Not_Opened__c</columns>
+        <columns>Number_of_Unique_Clicks__c</columns>
+        <columns>Unsubscribe_Rate__c</columns>
+        <columns>Subject__c</columns>
+        <columns>Bounce_Rate__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Mirko</label>
+    </listViews>
+    <listViews>
+        <fullName>Asia_Email_Results</fullName>
+        <columns>Date_Sent__c</columns>
+        <columns>Campaign__c</columns>
+        <columns>Subject__c</columns>
+        <columns>Number_Delivered__c</columns>
+        <columns>Open_Rate__c</columns>
+        <columns>Click_Through_Rate__c</columns>
+        <columns>Number_of_Unique_Clicks__c</columns>
+        <columns>Number_of_Unique_Opens__c</columns>
+        <columns>Number_Unsubscribed__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Campaign__c</field>
+            <operation>contains</operation>
+            <value>Asia</value>
+        </filters>
+        <label>Asia Email Results</label>
+    </listViews>
+    <listViews>
+        <fullName>BIBA</fullName>
+        <columns>Campaign__c</columns>
+        <columns>NAME</columns>
+        <columns>Bounce_Rate__c</columns>
+        <columns>Date_Sent__c</columns>
+        <columns>Open_Rate__c</columns>
+        <columns>Click_Through_Rate__c</columns>
+        <columns>Unsubscribe_Rate__c</columns>
+        <columns>Deliverability_Rate__c</columns>
+        <columns>Number_Sent__c</columns>
+        <columns>Number_Not_Opened__c</columns>
+        <columns>Number_of_Leads__c</columns>
+        <columns>Subject__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Number_of_Unique_Clicks__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Campaign__c</field>
+            <operation>contains</operation>
+            <value>BIBA</value>
+        </filters>
+        <label>BIBA</label>
+    </listViews>
+    <listViews>
+        <fullName>EU_Email_Results</fullName>
+        <columns>Date_Sent__c</columns>
+        <columns>Campaign__c</columns>
+        <columns>Subject__c</columns>
+        <columns>From_Name__c</columns>
+        <columns>Open_Rate__c</columns>
+        <columns>Click_Through_Rate__c</columns>
+        <columns>Bounce_Rate__c</columns>
+        <columns>Number_Delivered__c</columns>
+        <columns>Number_Sent__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>EU,EA</value>
+        </filters>
+        <label>EU Email Results</label>
+    </listViews>
+    <listViews>
+        <fullName>E_Mail_Results</fullName>
+        <columns>Date_Sent__c</columns>
+        <columns>NAME</columns>
+        <columns>Subject__c</columns>
+        <columns>Open_Rate__c</columns>
+        <columns>Click_Through_Rate__c</columns>
+        <columns>Number_Sent__c</columns>
+        <columns>Unsubscribe_Rate__c</columns>
+        <columns>Bounce_Rate__c</columns>
+        <columns>From_Address__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>E-Mail Results - ALL</label>
+    </listViews>
+    <listViews>
+        <fullName>LA_Email_Results</fullName>
+        <columns>Date_Sent__c</columns>
+        <columns>Campaign__c</columns>
+        <columns>Subject__c</columns>
+        <columns>Number_Delivered__c</columns>
+        <columns>Open_Rate__c</columns>
+        <columns>Click_Through_Rate__c</columns>
+        <columns>Number_of_Unique_Clicks__c</columns>
+        <columns>Number_of_Unique_Opens__c</columns>
+        <columns>Number_Unsubscribed__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>LA</value>
+        </filters>
+        <label>LA Email Results</label>
+    </listViews>
+    <listViews>
+        <fullName>LA_GMASS_Blasts</fullName>
+        <columns>Date_Sent__c</columns>
+        <columns>NAME</columns>
+        <columns>Subject__c</columns>
+        <columns>Open_Rate__c</columns>
+        <columns>Click_Through_Rate__c</columns>
+        <columns>Bounce_Rate__c</columns>
+        <columns>Number_of_Leads__c</columns>
+        <columns>Number_Sent__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>la</value>
+        </filters>
+        <filters>
+            <field>Campaign__c</field>
+            <operation>contains</operation>
+            <value>gmass</value>
+        </filters>
+        <label>LA GMASS Blasts</label>
+    </listViews>
+    <listViews>
+        <fullName>MBA_West_E_mail_Campaigns</fullName>
+        <columns>Date_Sent__c</columns>
+        <columns>NAME</columns>
+        <columns>Subject__c</columns>
+        <columns>Open_Rate__c</columns>
+        <columns>Click_Through_Rate__c</columns>
+        <columns>Number_Sent__c</columns>
+        <columns>Unsubscribe_Rate__c</columns>
+        <columns>Bounce_Rate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>mba,ma</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>la</value>
+        </filters>
+        <label>LA MBA MA Email Results</label>
+    </listViews>
+    <listViews>
+        <fullName>NA_Email_Results</fullName>
+        <columns>Date_Sent__c</columns>
+        <columns>Campaign__c</columns>
+        <columns>Subject__c</columns>
+        <columns>Number_Delivered__c</columns>
+        <columns>Open_Rate__c</columns>
+        <columns>Click_Through_Rate__c</columns>
+        <columns>Number_of_Unique_Clicks__c</columns>
+        <columns>Number_of_Unique_Opens__c</columns>
+        <columns>Number_Unsubscribed__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>NA</value>
+        </filters>
+        <filters>
+            <field>Subject__c</field>
+            <operation>equals</operation>
+            <value>Your Application: Process &amp; Timeline</value>
+        </filters>
+        <label>NA DL Email Results</label>
+    </listViews>
+    <listViews>
+        <fullName>NA_Email_Results1</fullName>
+        <columns>Date_Sent__c</columns>
+        <columns>Campaign__c</columns>
+        <columns>Subject__c</columns>
+        <columns>Number_Delivered__c</columns>
+        <columns>Open_Rate__c</columns>
+        <columns>Click_Through_Rate__c</columns>
+        <columns>Number_of_Unique_Clicks__c</columns>
+        <columns>Number_of_Unique_Opens__c</columns>
+        <columns>Number_Unsubscribed__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>NA</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>HultLabs</value>
+        </filters>
+        <label>NA HultLabs Email Results</label>
+    </listViews>
+    <listViews>
+        <fullName>NA_GMASS_Blasts</fullName>
+        <columns>Date_Sent__c</columns>
+        <columns>NAME</columns>
+        <columns>Subject__c</columns>
+        <columns>Open_Rate__c</columns>
+        <columns>Click_Through_Rate__c</columns>
+        <columns>Bounce_Rate__c</columns>
+        <columns>Number_Sent__c</columns>
+        <columns>Number_of_Leads__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>GMASS</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>na</value>
+        </filters>
+        <label>NA GMASS Blasts</label>
+    </listViews>
+    <listViews>
+        <fullName>NA_INTRO</fullName>
+        <columns>Date_Sent__c</columns>
+        <columns>Campaign__c</columns>
+        <columns>Subject__c</columns>
+        <columns>Number_Delivered__c</columns>
+        <columns>Open_Rate__c</columns>
+        <columns>Click_Through_Rate__c</columns>
+        <columns>Number_of_Unique_Clicks__c</columns>
+        <columns>Number_of_Unique_Opens__c</columns>
+        <columns>Number_Unsubscribed__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>NA</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>GMASS INTRO</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+        </filters>
+        <label>NA INTRO</label>
+    </listViews>
+    <listViews>
+        <fullName>NA_LA_BIBA_EMail_Campaigns</fullName>
+        <columns>Date_Sent__c</columns>
+        <columns>NAME</columns>
+        <columns>Subject__c</columns>
+        <columns>Open_Rate__c</columns>
+        <columns>Click_Through_Rate__c</columns>
+        <columns>Number_Sent__c</columns>
+        <columns>Unsubscribe_Rate__c</columns>
+        <columns>Bounce_Rate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>la,na</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>BIBA</value>
+        </filters>
+        <label>NA LA BIBA EMail Results</label>
+    </listViews>
+    <listViews>
+        <fullName>NA_MBA_MA_Email_Results</fullName>
+        <columns>Date_Sent__c</columns>
+        <columns>NAME</columns>
+        <columns>Subject__c</columns>
+        <columns>Open_Rate__c</columns>
+        <columns>Click_Through_Rate__c</columns>
+        <columns>Total_Number_of_Records__c</columns>
+        <columns>Unsubscribe_Rate__c</columns>
+        <columns>Bounce_Rate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>na</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>mba,ma</value>
+        </filters>
+        <label>NA MBA MA Email Results</label>
+    </listViews>
+    <listViews>
+        <fullName>NA_Monthly_Emails</fullName>
+        <columns>Date_Sent__c</columns>
+        <columns>Campaign__c</columns>
+        <columns>Subject__c</columns>
+        <columns>Number_Delivered__c</columns>
+        <columns>Open_Rate__c</columns>
+        <columns>Click_Through_Rate__c</columns>
+        <columns>Number_of_Unique_Clicks__c</columns>
+        <columns>Number_of_Unique_Opens__c</columns>
+        <columns>Number_Unsubscribed__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>NA</value>
+        </filters>
+        <label>NA Email Results</label>
+    </listViews>
+    <listViews>
+        <fullName>NA_PR_GMAT_TIPS_DOWNLOAD</fullName>
+        <columns>Date_Sent__c</columns>
+        <columns>Campaign__c</columns>
+        <columns>Subject__c</columns>
+        <columns>Number_Delivered__c</columns>
+        <columns>Open_Rate__c</columns>
+        <columns>Click_Through_Rate__c</columns>
+        <columns>Number_of_Unique_Clicks__c</columns>
+        <columns>Number_of_Unique_Opens__c</columns>
+        <columns>Number_Unsubscribed__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>NA</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>VSS</value>
+        </filters>
+        <label>NA VSS</label>
+    </listViews>
+    <listViews>
+        <fullName>NA_YOU_Results</fullName>
+        <columns>Date_Sent__c</columns>
+        <columns>Campaign__c</columns>
+        <columns>Subject__c</columns>
+        <columns>Number_Delivered__c</columns>
+        <columns>Open_Rate__c</columns>
+        <columns>Click_Through_Rate__c</columns>
+        <columns>Number_of_Unique_Clicks__c</columns>
+        <columns>Number_of_Unique_Opens__c</columns>
+        <columns>Number_Unsubscribed__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>NAME</field>
+            <operation>startsWith</operation>
+            <value>NA</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+            <value>YOU GMASS</value>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+        </filters>
+        <filters>
+            <field>NAME</field>
+            <operation>contains</operation>
+        </filters>
+        <label>NA YOU Results</label>
+    </listViews>
+    <nameField>
+        <label>Email Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Email Results</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Subject__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Date_Sent__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Number_Sent__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Open_Rate__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Click_Through_Rate__c</customTabListAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>ViewSentEmail</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <hasScrollbars>true</hasScrollbars>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>View Sent Email</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <url>https://members.s4.exacttarget.com/Integration/SalesforceUI/SendPreview.aspx?emailResultID={!xtma_Email_Result__c.Id}&amp;sessid={!API.Session_ID}&amp;sessurl={!API.Partner_Server_URL_60}</url>
+        <width>600</width>
+    </webLinks>
+</CustomObject>

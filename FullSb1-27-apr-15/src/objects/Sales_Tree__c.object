@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Reporting_To_Role__c</fullName>
+        <formula>Reporting_To__r.UserRole.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Reporting To Role</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Reporting_To_Status__c</fullName>
+        <formula>if( Reporting_To__r.IsActive, &quot;Active&quot;,&quot;Inactive&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Reporting To Status</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Reporting_To__c</fullName>
+        <label>Reporting To</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Subordinates</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Subordinate_Role__c</fullName>
+        <formula>Subordinate__r.UserRole.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Subordinate Role</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Subordinate_Status__c</fullName>
+        <formula>if(Subordinate__r.IsActive, &quot;Active&quot;,&quot;Inactive&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Subordinate Status</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Subordinate__c</fullName>
+        <label>Subordinate</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Sales_Tree</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <label>Sales Tree</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Subordinate__c</columns>
+        <columns>Reporting_To_Role__c</columns>
+        <columns>Reporting_To__c</columns>
+        <columns>Subordinate_Role__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <columns>NAME</columns>
+        <columns>Subordinate__c</columns>
+        <columns>Reporting_To__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Sales Tree Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Sales Tree</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Read</sharingModel>
+</CustomObject>

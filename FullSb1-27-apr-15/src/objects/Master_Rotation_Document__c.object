@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Applies_to_Dependent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <inlineHelpText>Required for dependents also?</inlineHelpText>
+        <label>Applies to Dependent</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Applies_to_Student__c</fullName>
+        <defaultValue>true</defaultValue>
+        <inlineHelpText>Required for student?</inlineHelpText>
+        <label>Applies to Student</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>New_copy_in_all_rotations__c</fullName>
+        <defaultValue>false</defaultValue>
+        <inlineHelpText>Creates New copy in each rotation, even though if there is a record exist with same name in another module rotation . 
+Ex:Passport-field val = false-only one record for both mod D &amp; E rotations.
+Current visa-field val = true-each mod separate record.</inlineHelpText>
+        <label>New copy in all rotations?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Visa_Track__c</fullName>
+        <label>Visa Track</label>
+        <referenceTo>Visa_Track__c</referenceTo>
+        <relationshipName>Master_Documents</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <type>MasterDetail</type>
+    </fields>
+    <label>Master Rotation Document</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Visa_Track__c</columns>
+        <columns>Applies_to_Student__c</columns>
+        <columns>Applies_to_Dependent__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All1</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Master Documents Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Master Rotation Documents</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

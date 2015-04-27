@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Lead_Source_Category__c</fullName>
+        <label>Lead Source Category</label>
+        <referenceTo>Lead_Source_Category__c</referenceTo>
+        <relationshipLabel>Lead Sources</relationshipLabel>
+        <relationshipName>Lead_Sources</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Valid_Lead_Source__c</fullName>
+        <inlineHelpText>If this value is null then this current record is a Valid Lead Source else this current record is an invalid lead source</inlineHelpText>
+        <label>Valid Lead Source</label>
+        <referenceTo>Lead_Source__c</referenceTo>
+        <relationshipLabel>Invalid Lead Sources</relationshipLabel>
+        <relationshipName>Invalid_Lead_Sources</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Weighting__c</fullName>
+        <formula>Lead_Source_Category__r.Weighting__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Weighting</label>
+        <precision>18</precision>
+        <scale>0</scale>
+        <type>Percent</type>
+    </fields>
+    <label>Lead Source</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Lead Source Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Lead Sources</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

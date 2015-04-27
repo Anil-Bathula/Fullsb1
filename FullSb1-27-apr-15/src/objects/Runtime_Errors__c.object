@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>To Capture Runtime errors.</description>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Error_Description__c</fullName>
+        <label>Error Description</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Error_Type__c</fullName>
+        <label>Error Type</label>
+        <length>100</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Error_info__c</fullName>
+        <label>Error info</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Stack_Trace__c</fullName>
+        <label>Stack Trace</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <label>Runtime Errors</label>
+    <nameField>
+        <displayFormat>Err-{0}</displayFormat>
+        <label>Runtime Errors  Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Runtime Errors</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

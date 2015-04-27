@@ -1,0 +1,3856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>AETNA_Single_2_Child__c</fullName>
+        <label>AETNA Single &amp; 2 Child</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AETNA_Single_6_months_visiting__c</fullName>
+        <label>AETNA Single 6 months (visiting)</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AETNA_Single_Spouse_2_Child__c</fullName>
+        <label>AETNA Single &amp; Spouse &amp; 2 Child</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AETNA_Single_Spouse_Child__c</fullName>
+        <label>AETNA Single &amp; Spouse &amp; Child</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AETNA_Single_Spouse__c</fullName>
+        <label>AETNA Single &amp; Spouse</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AETNA_Single__c</fullName>
+        <label>AETNA Single</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>AETNA_Single_child__c</fullName>
+        <label>AETNA Single &amp; Child</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Accommodation_for_12_months__c</fullName>
+        <label>Shanghai_Accommodation for 12 months</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Accommodation_for_8_months__c</fullName>
+        <label>Shanghai_Accommodation for 8 months</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Accommodation_with_dependent_for_12_mths__c</fullName>
+        <label>Shanghai_Accom w/dependent for 12 mths</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Accommodation_with_dependent_for_8_mths__c</fullName>
+        <label>Shanghai Accom w/dependent for 8 mths</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Apartment_P1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Apartment P1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Apartment_P2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Apartment P2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Apartment_P3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Apartment P3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Apartment_Vista_P1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Apartment Vista P1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Apartment_Vista_P2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Apartment Vista P2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Apartment_Vista_P3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Apartment Vista P3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Application_Fee__c</fullName>
+        <defaultValue>150.00</defaultValue>
+        <description>Application Fee should be always in USD, so created Number field</description>
+        <inlineHelpText>Application Fee should be always in USD.</inlineHelpText>
+        <label>Application Fee (in USD)</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Aetna_Insurance_Year_1__c</fullName>
+        <label>Aetna Insurance - Year 1 - Single</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Aetna_Insurance_Year_2__c</fullName>
+        <label>Aetna Insurance - Year 2 - Single</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Aetna_Insurance_Year_3__c</fullName>
+        <label>Aetna Insurance - Year 3 - Single</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Aetna_Insurance_Year_4__c</fullName>
+        <label>Aetna Insurance - Year 4 - Single</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_P1_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Apartment P1 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_P1_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Apartment P1 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_P1_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Apartment P1 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_P1_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Apartment P1 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_P2_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Apartment P2 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_P2_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Apartment P2 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_P2_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Apartment P2 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_P2_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Apartment P2 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_P3_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Apartment P3 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_P3_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Apartment P3 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_P3_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Apartment P3 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_P3_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Apartment P3 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_Vista_P1_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Apartment Vista P1 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_Vista_P1_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Apartment Vista P1 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_Vista_P1_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Apartment Vista P1 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_Vista_P1_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Apartment Vista P1 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_Vista_P2_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Apartment Vista P2 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_Vista_P2_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Apartment Vista P2 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_Vista_P2_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Apartment Vista P2 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_Vista_P2_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Apartment Vista P2 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_Vista_P3_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Apartment Vista P3 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_Vista_P3_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Apartment Vista P3 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_Vista_P3_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Apartment Vista P3 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Apartment_Vista_P3_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Apartment Vista P3 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_P1_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Bunk Studio P1 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_P1_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Bunk Studio P1 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_P1_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Bunk Studio P1 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_P1_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Bunk Studio P1 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_P2_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Bunk Studio P2 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_P2_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Bunk Studio P2 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_P2_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Bunk Studio P2 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_P2_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Bunk Studio P2 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_P3_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Bunk Studio P3 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_P3_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Bunk Studio P3 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_P3_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Bunk Studio P3 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_P3_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Bunk Studio P3 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_Vista_P1_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Bunk Studio Vista P1 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_Vista_P1_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Bunk Studio Vista P1 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_Vista_P1_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Bunk Studio Vista P1 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_Vista_P1_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Bunk Studio Vista P1 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_Vista_P2_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Bunk Studio Vista P2 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_Vista_P2_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Bunk Studio Vista P2 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_Vista_P2_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Bunk Studio Vista P2 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_Vista_P2_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Bunk Studio Vista P2 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_Vista_P3_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Bunk Studio Vista P3 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_Vista_P3_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Bunk Studio Vista P3 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_Vista_P3_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Bunk Studio Vista P3 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Bunk_Studio_Vista_P3_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Bunk Studio Vista P3 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_DUB_Visa_Residence__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>UAE - Visa - Residence - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_DUB_Visa_Transit__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>UAE - Visa - Transit - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_DUB_Visa_Visit__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>UAE - Visa - Visit - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apart_P1_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Deluxe Studio Apartment P1 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apart_P1_Year_2__c</fullName>
+        <description>changed Api Name from BBA_Deluxe_Studio_Apartment_51_weeks_Y_2 to BBA_Deluxe_Studio_Apart_36_Weeks_Year_2
+
+This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Deluxe Studio Apartment P1 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apart_P1_Year_3__c</fullName>
+        <description>changed Api Name from BBA_Deluxe_Studio_Apartment_36_weeks_Y_3 to BBA_Deluxe_Studio_Apart_36_Weeks_Year_3
+
+This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Deluxe Studio Apartment P1 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apart_P1_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Deluxe Studio Apartment P1 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apart_P2_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Deluxe Studio Apartment P2 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apart_P2_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Deluxe Studio Apartment P2 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apart_P2_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Deluxe Studio Apartment P2 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apart_P2_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Deluxe Studio Apartment P2 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apart_P3_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Deluxe Studio Apartment P3 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apart_P3_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Deluxe Studio Apartment P3 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apart_P3_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Deluxe Studio Apartment P3 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apart_P3_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Deluxe Studio Apartment P3 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apt_Extra_P1_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Deluxe Studio Apt. Extra P1 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apt_Extra_P1_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Deluxe Studio Apt. Extra P1 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apt_Extra_P1_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Deluxe Studio Apt. Extra P1- Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apt_Extra_P1_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Deluxe Studio Apt. Extra P1 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apt_Extra_P2_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Deluxe Studio Apt. Extra P2 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apt_Extra_P2_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Deluxe Studio Apt. Extra P2 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apt_Extra_P2_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Deluxe Studio Apt. Extra P2 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apt_Extra_P2_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Deluxe Studio Apt. Extra P2 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apt_Extra_P3_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Deluxe Studio Apt. Extra P3 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apt_Extra_P3_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Deluxe Studio Apt. Extra P3 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apt_Extra_P3_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Deluxe Studio Apt. Extra P3 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Deluxe_Studio_Apt_Extra_P3_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Deluxe Studio Apt. Extra P3 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Erika_Insurance_Year_1_Single_BBA__c</fullName>
+        <description>BBA Only</description>
+        <label>Erika Insurance - Year 1 - Single</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Erika_Insurance_Year_3_Single_BBA__c</fullName>
+        <description>BBA Only</description>
+        <label>Erika Insurance - Year 3 - Single</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Erika_Insurance_Year_4_Single_BBA__c</fullName>
+        <description>BBA Only</description>
+        <label>Erika Insurance - Year 4 - Single</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Erika_Insurnce_Year_2_Single_BBA__c</fullName>
+        <description>BBA Only</description>
+        <label>Erika Insurance - Year 2 - Single</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Installment_Plan_Flex_Fee_Year_1__c</fullName>
+        <label>Installment Plan Flex Fee - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Installment_Plan_Flex_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Installment Plan Flex - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Installment_Plan_Flex_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Installment Plan Flex - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Installment_Plan_Flex_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Installment Plan Flex - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Installment_Plan_Flex_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Installment Plan Flex - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Installment_Plan_Year_1_BBA__c</fullName>
+        <description>BBA Only</description>
+        <label>Installment Plan - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Installment_Plan_Year_2_BBA__c</fullName>
+        <description>BBA Only</description>
+        <label>Installment Plan - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Installment_Plan_Year_3_BBA__c</fullName>
+        <description>BBA Only</description>
+        <label>Installment Plan - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Installment_Plan_Year_4_BBA__c</fullName>
+        <description>BBA Only!</description>
+        <label>Installment Plan - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Insurance_Erika_Mod_D__c</fullName>
+        <label>Insurance - Erika - Mod D - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Insurance_Erika_Mod_E__c</fullName>
+        <label>Insurance - Erika - Mod E - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Penthouse_Luxury_Studio_P1_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Penthouse Luxury Studio P1 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Penthouse_Luxury_Studio_P1_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Penthouse Luxury Studio P1 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Penthouse_Luxury_Studio_P1_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Penthouse Luxury Studio P1 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Penthouse_Luxury_Studio_P1_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Penthouse Luxury Studio P1 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Penthouse_Luxury_Studio_P2_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Penthouse Luxury Studio P2 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Penthouse_Luxury_Studio_P2_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Penthouse Luxury Studio P2 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Penthouse_Luxury_Studio_P2_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Penthouse Luxury Studio P2 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Penthouse_Luxury_Studio_P2_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Penthouse Luxury Studio P2 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Penthouse_Luxury_Studio_P3_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Penthouse Luxury Studio P3 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Penthouse_Luxury_Studio_P3_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Penthouse Luxury Studio P3 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Penthouse_Luxury_Studio_P3_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Penthouse Luxury Studio P3 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Penthouse_Luxury_Studio_P3_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Penthouse Luxury Studio P3 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Pre_University_Fee__c</fullName>
+        <label>Pre-University Fee</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Double_P1_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Double P1 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Double_P1_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Double P1 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Double_P1_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Double P1 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Double_P1_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Double P1 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Double_P2_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Double P2 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Double_P2_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Double P2 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Double_P2_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Double P2 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Double_P2_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Double P2 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Double_P3_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Double P3 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Double_P3_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Double P3 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Double_P3_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Double P3 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Double_P3_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Double P3 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_SFO_P1_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Single SFO P1 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_SFO_P1_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Single SFO P1 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_SFO_P1_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Single SFO P1 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_SFO_P1_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Single SFO P1 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_SFO_P2_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Single SFO P2 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_SFO_P2_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Single SFO P2 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_SFO_P2_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Single SFO P2 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_SFO_P2_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Single SFO P2 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_SFO_P3_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Single SFO P3 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_SFO_P3_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Single SFO P3 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_SFO_P3_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Single SFO P3 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_SFO_P3_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Single SFO P3 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_UK_P1_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Single UK P1 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_UK_P1_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Single UK P1 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_UK_P1_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Single UK P1 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_UK_P1_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Single UK P1 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_UK_P2_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Single UK P2 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_UK_P2_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Single UK P2 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_UK_P2_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Single UK P2 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_UK_P2_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Single UK P2 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_UK_P3_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Single UK P3 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_UK_P3_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Single UK P3 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_UK_P3_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Single UK P3 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Single_UK_P3_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Single UK P3 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Twin_P1_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Twin P1 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Twin_P1_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Twin P1 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Twin_P1_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Twin P1 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Twin_P1_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Twin P1 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Twin_P2_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Twin P2 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Twin_P2_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Twin P2 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Twin_P2_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Twin P2 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Twin_P2_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Twin P2 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Twin_P3_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Twin P3 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Twin_P3_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Twin P3 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Twin_P3_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Twin P3 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Premium_Twin_P3_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Twin P3 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Program_Fee_Year_1_BBA__c</fullName>
+        <description>BBA Only</description>
+        <label>Program Fee Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Program_Fee_Year_2__c</fullName>
+        <description>BBA Only</description>
+        <label>Program Fee Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Program_Fee_Year_3_BBA__c</fullName>
+        <description>BBA Only</description>
+        <label>Program Fee Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Program_Fee_Year_4_BBA__c</fullName>
+        <description>BBA Only</description>
+        <label>Program Fee Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_SHA_Housing_BBA_Accomm_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>SHA - BBA Accom. - Mod D - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_SHA_Housing_BBA_Accomm_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>SHA - BBA Accom. - Mod E - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_SHA_Housing_Dependent_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>SHA - Dependent - Mod D - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_SHA_Housing_Dependent_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>SHA - Dependent - Mod E - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_SHA_Housing_Suite_Mod_D__c</fullName>
+        <label>SHA - Housing - Suite - Mod D - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_SHA_Housing_Suite_Mod_E__c</fullName>
+        <label>SHA - Housing - Suite - Mod E - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_SHA_Visa_JW_202__c</fullName>
+        <label>SHA - Visa - JW-202 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Single_P1_Year_1__c</fullName>
+        <description>BBA Only
+This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Single P1 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Single_P1_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Single P1 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Single_P1_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Single P1 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Single_P1_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Single P1 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Single_P2_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Single P2 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Single_P2_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Single P2 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Single_P2_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Single P2 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Single_P2_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Single P2 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Single_P3_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Single P3 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Single_P3_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Single P3 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Single_P3_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Single P3 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Single_P3_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Single P3 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Standard_Double_P1_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Standard Double P1 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Standard_Double_P1_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Standard Double P1 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Standard_Double_P1_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Standard Double P1 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Standard_Double_P1_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Standard Double P1 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Standard_Double_P2_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Standard Double P2 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Standard_Double_P2_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Standard Double P2 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Standard_Double_P2_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Standard Double P2 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Standard_Double_P2_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Standard Double P2 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Standard_Double_P3_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Standard Double P3 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Standard_Double_P3_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Standard Double P3 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Standard_Double_P3_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Standard Double P3 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Standard_Double_P3_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Standard Double P3 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_P1_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Studio P1 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_P1_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Studio P1 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_P1_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Studio P1 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_P1_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Studio P1 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_P2_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Studio P2 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_P2_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Studio P2 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_P2_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Studio P2 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_P2_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Studio P2 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_P3_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Studio P3 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_P3_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Studio P3 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_P3_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Studio P3 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_P3_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Studio P3 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_Vista_P1_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Studio Vista P1 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_Vista_P1_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Studio Vista P1 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_Vista_P1_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Studio Vista P1 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_Vista_P1_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Studio Vista P1 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_Vista_P2_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Studio Vista P2 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_Vista_P2_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Studio Vista P2 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_Vista_P2_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Studio Vista P2 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_Vista_P2_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Studio Vista P2 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_Vista_P3_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Studio Vista P3 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_Vista_P3_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Studio Vista P3 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_Vista_P3_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Studio Vista P3 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Studio_Vista_P3_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Studio Vista P3 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Twin_P1_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Twin P1 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Twin_P1_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Twin P1 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Twin_P1_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Twin P1 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Twin_P1_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Twin P1 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Twin_P2_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Twin P2 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Twin_P2_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Twin P2 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Twin_P2_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Twin P2 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Twin_P2_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Twin P2 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Twin_P3_Year_1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Twin P3 - Year 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Twin_P3_Year_2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Twin P3 - Year 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Twin_P3_Year_3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Twin P3 - Year 3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BBA_Twin_P3_Year_4__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Twin P3 - Year 4</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Bunk_Studio_P1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Bunk Studio P1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Bunk_Studio_P2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Bunk Studio P2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Bunk_Studio_P3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Bunk Studio P3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Bunk_Studio_Vista_P1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Bunk Studio Vista P1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Bunk_Studio_Vista_P2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Bunk Studio Vista P2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Bunk_Studio_Vista_P3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Bunk Studio Vista P3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Confirmation_Deposit__c</fullName>
+        <description>Confirmation Deposit for current program and year</description>
+        <inlineHelpText>Confirmation Deposit for current program and year</inlineHelpText>
+        <label>Confirmation Deposit</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>DUB_Visa_Residence__c</fullName>
+        <description>UAE - Visa - Residence</description>
+        <label>DUB - Visa - Residence</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>DUB_Visa_Transit__c</fullName>
+        <description>UAE - Visa - Transit</description>
+        <label>DUB - Visa - Transit</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>DUB_Visa_Visit__c</fullName>
+        <description>UAE - Visa - Visit</description>
+        <label>DUB - Visa - Visit</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Deluxe_Studio_Apartment_Extra_P1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Deluxe Studio Apartment Extra P1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Deluxe_Studio_Apartment_Extra_P2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Deluxe Studio Apartment Extra P2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Deluxe_Studio_Apartment_Extra_P3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Deluxe Studio Apartment Extra P3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Deluxe_Studio_Apartment_P1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Deluxe Studio Apartment P1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Deluxe_Studio_Apartment_P2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Deluxe Studio Apartment P2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Deluxe_Studio_Apartment_P3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Deluxe Studio Apartment P3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Diploma_in_MDM_or_MFIN__c</fullName>
+        <label>Diploma in MDM or MFIN</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_Double_Room_Mod_D__c</fullName>
+        <label>Dubai - Double Room - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_Double_Room_Mod_E__c</fullName>
+        <label>Dubai - Double Room - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_Double_of_Three_Mod_D__c</fullName>
+        <label>Dubai - Double of Three - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_Double_of_Three_Mod_E__c</fullName>
+        <label>Dubai - Double of Three - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_EMBA_Transit_Visa_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Dubai - EMBA Transit Visa - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_EMBA_Transit_Visa_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Dubai - EMBA Transit Visa - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_Housing_Bursary__c</fullName>
+        <label>Dubai Housing Bursary</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_Single_Room_Mod_D__c</fullName>
+        <label>Dubai - Single Room - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_Single_Room_Mod_E__c</fullName>
+        <label>Dubai - Single Room - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_Single_Shared_Mod_D__c</fullName>
+        <label>Dubai - Single Shared - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_Single_Shared_Mod_E__c</fullName>
+        <label>Dubai - Single Shared - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_Single_of_Three_Mod_D__c</fullName>
+        <label>Dubai - Single of Three - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_Single_of_Three_Mod_E__c</fullName>
+        <label>Dubai - Single of Three - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_Student_Residence_Visa_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Dubai - Student Residence Visa - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_Student_Residence_Visa_Mod_E__c</fullName>
+        <label>Dubai - Student Residence Visa - Mod E</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_Visit_Visa_1_Month_Mod_D__c</fullName>
+        <label>Dubai - Visit Visa (1 Month) - Mod D</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_Visit_Visa_1_Month_Mod_E__c</fullName>
+        <label>Dubai - Visit Visa (1 Month) - Mod E</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_Visit_Visa_3_Months_Mod_D__c</fullName>
+        <label>Dubai - Visit Visa (3 Months) - Mod D</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dubai_Visit_Visa_3_Months_Mod_E__c</fullName>
+        <label>Dubai - Visit Visa (3 Months) - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>EMBA_Hotel__c</fullName>
+        <label>EMBA Hotel</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ERIKA_Single_2_Child__c</fullName>
+        <label>ERIKA Single &amp; 2 Child</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ERIKA_Single_6_months_visiting__c</fullName>
+        <label>ERIKA Single 6 months (visiting)</label>
+        <precision>10</precision>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ERIKA_Single_Child__c</fullName>
+        <label>ERIKA Single &amp; Child</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ERIKA_Single_Spouse_2_Child__c</fullName>
+        <label>ERIKA Single &amp; Spouse &amp; 2 Child</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ERIKA_Single_Spouse_Child__c</fullName>
+        <label>ERIKA Single &amp; Spouse &amp; Child</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>ERIKA_Single_Spouse__c</fullName>
+        <label>ERIKA Single &amp; Spouse</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Erika_Insurance_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Erika Insurance - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Erika_Insurance_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Erika Insurance - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Erika_Single__c</fullName>
+        <label>ERIKA Single</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Free_accommodation_with_dependent_8mth__c</fullName>
+        <label>Free accommodation with dependent – 8mth</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>GoEd_Application_Fee_Fee_Object_c__c</fullName>
+        <label>GoEd Application Fee (in USD)</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>HH_Assam_Studio_Single__c</fullName>
+        <label>HH_Assam_Studio_Single</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HH_Classic_Studio_Deluxe_Single__c</fullName>
+        <label>HH - Classic Studio Deluxe - Single</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HH_Classic_Studio_Single__c</fullName>
+        <label>HH - Classic Studio - Single</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HH_Club_Studio_Deluxe_Single__c</fullName>
+        <label>HH - Club Studio Deluxe - Single</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HH_Club_Studio_Single__c</fullName>
+        <label>HH - Club Studio - Single</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HH_Solo_Single__c</fullName>
+        <label>HH - Solo - Single</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HH_Studios_Premium_11_14_Single__c</fullName>
+        <label>HH - Studios Premium 11-14 - Single</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HH_Studios_Premium_15_16_Single__c</fullName>
+        <label>HH - Studios Premium 15 -16 - Single</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HH_Studios_Vista_Single__c</fullName>
+        <label>HH - Studios Vista - Single</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HH_Study_Twin_Double__c</fullName>
+        <label>HH - Study Twin - Double</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HH_Super_Twin_Double__c</fullName>
+        <label>HH - Super Twin - Double</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HH_Twin_Plus_Double__c</fullName>
+        <label>HH - Twin Plus - Double</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HH_Twin_Studios_Double__c</fullName>
+        <label>HH - Twin Studios - Double</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Housing__c</fullName>
+        <label>Housing</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hult_House_East_12_Months__c</fullName>
+        <label>HH East – 12 Months</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>IEMBA_3_months_Insurance__c</fullName>
+        <label>IEMBA 3 months Insurance</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>IEMBA_6_months_Insurance__c</fullName>
+        <label>IEMBA 6 months Insurance</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>IMEBA_3_months__c</fullName>
+        <label>IEMBA 3 months</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>IMEBA_6_months__c</fullName>
+        <label>IEMBA 6 months</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>In_country_Student_Visa_Transfer__c</fullName>
+        <label>In country Student Visa Transfer</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Installment_Plan_Flex_Fee__c</fullName>
+        <label>Installment Plan Flex Fee</label>
+        <precision>12</precision>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Installment_Plan_fee__c</fullName>
+        <label>Installment Plan fee</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Insurance_Erika_Mod_D__c</fullName>
+        <description>Insurance - Erika - Mod D</description>
+        <label>Insurance - Erika - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Insurance_Erika_Mod_E__c</fullName>
+        <description>Insurance - Erika - Mod E</description>
+        <label>Insurance - Erika - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Insurance_IEMBA_3m__c</fullName>
+        <label>Insurance IEMBA 3m</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Insurance_IEMBA_6m__c</fullName>
+        <label>Insurance IEMBA 6m</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Apartment_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Apartment - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Apartment_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Apartment - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Apartment_Vista_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Apartment Vista - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Apartment_Vista_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Apartment Vista - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Bunk_Studio_Mod_D__c</fullName>
+        <label>London - Bunk Studio - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Bunk_Studio_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Bunk Studio - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Bunk_Studio_Vista_Mod_D__c</fullName>
+        <label>London - Bunk Studio Vista - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Bunk_Studio_Vista_Mod_E__c</fullName>
+        <description>SHA - Housing - Type D1 - Mod E</description>
+        <label>London - Bunk Studio Vista - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Deluxe_Studio_Apartment_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Deluxe Studio Apartment - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Deluxe_Studio_Apartment_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Deluxe Studio Apartment - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Deluxe_Studio_Apt_Extra_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Deluxe Studio Apt Extra - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Deluxe_Studio_Apt_Extra_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Deluxe Studio Apt Extra - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Penthouse_Luxury_Studio_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Penthouse Luxury Studio - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Penthouse_Luxury_Studio_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Penthouse Luxury Studio - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Premium_Single_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Premium Single - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Premium_Single_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Premium Single - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Premium_Twin_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Premium Twin - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Premium_Twin_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Premium Twin - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Single_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Single - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Single_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Single - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Studio_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Studio - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Studio_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Studio - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Studio_Vista_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Studio Vista - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Studio_Vista_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Studio Vista - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Twin_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Twin - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>London_Twin_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>London - Twin - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NYC_Housing_Large_Single_Mod_D__c</fullName>
+        <label>NYC - Housing - Large Single - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NYC_Housing_Large_Single_Mod_E__c</fullName>
+        <label>NYC - Housing - Large Single - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NYC_Housing_Single_Mod_D_E__c</fullName>
+        <description>NY - Housing - Single - Mod D&amp;E</description>
+        <label>NYC - Housing - Single - Mod D&amp;E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NYC_Housing_Single_Mod_D__c</fullName>
+        <description>NY - Housing - Single - Mod D</description>
+        <label>NYC - Housing - Single - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NYC_Housing_Single_Mod_E__c</fullName>
+        <description>NY - Housing - Single - Mod E</description>
+        <label>NYC - Housing - Single - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NYC_Housing_Twin_Mod_D_E__c</fullName>
+        <description>NY - Housing - Twin - Mod D&amp;E</description>
+        <label>NYC - Housing - Twin - Mod D&amp;E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NYC_Housing_Twin_Mod_D__c</fullName>
+        <description>NY - Housing - Twin - Mod D</description>
+        <label>NYC - Housing - Twin - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NYC_Housing_Twin_Mod_E__c</fullName>
+        <description>NY - Housing - Twin - Mod E</description>
+        <label>NYC - Housing - Twin - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>New_York_Double_Room_Mod_D__c</fullName>
+        <label>New York - Double Room - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>New_York_Double_Room_Mod_E__c</fullName>
+        <label>New York - Double Room - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>New_York_Premium_Single_Mod_D__c</fullName>
+        <label>New York - Premium Single - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>New_York_Premium_Single_Mod_E__c</fullName>
+        <label>New York - Premium Single - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>New_York_Single_Mod_D__c</fullName>
+        <label>New York - Single - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>New_York_Single_Mod_E__c</fullName>
+        <label>New York - Single - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Penthouse_Luxury_Studio_P1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Penthouse Luxury Studio P1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Penthouse_Luxury_Studio_P2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Penthouse Luxury Studio P2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Penthouse_Luxury_Studio_P3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Penthouse Luxury Studio P3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Master_Program_3_months__c</fullName>
+        <label>Pre-Master Program (3 months)</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Master_Program_6_mos__c</fullName>
+        <label>Pre-Master Program (6 mos)</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Master_Program_9_months__c</fullName>
+        <label>Pre-Master Program (9 months)</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Premium_Double_Room_P1__c</fullName>
+        <description>SFO Housing
+This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Double P1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Premium_Double_Room_P2__c</fullName>
+        <description>SFO Housing
+This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Double P2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Premium_Double_Room_P3__c</fullName>
+        <description>SFO Housing
+This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Double P3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Premium_Double_Room_Summer_Term_12__c</fullName>
+        <description>SFO Housing</description>
+        <label>Premium Double Room - Summer Term 1&amp;2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Premium_Double_Room_Summer_Term_1__c</fullName>
+        <description>SFO Housing</description>
+        <label>Premium Double Room - Summer Term 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Premium_Double_Room_Summer_Term_2__c</fullName>
+        <description>SFO Housing</description>
+        <label>Premium Double Room - Summer Term 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Premium_Single_Room_SFO_P1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Single SFO P1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Premium_Single_Room_SFO_P2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Single SFO P2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Premium_Single_Room_SFO_P3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Single SFO P3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Premium_Single_UK_P1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Single UK P1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Premium_Single_UK_P2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Single UK P2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Premium_Single_UK_P3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Single UK P3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Premium_Twin_P1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Premium Twin P1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Premium_Twin_P2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Premium Twin P2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Premium_Twin_P3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Premium Twin P3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Program_Name__c</fullName>
+        <description>Complete Fee information stored in this object for each Academic year and for each Program</description>
+        <inlineHelpText>Complete Fee information for each Academic year and for each Program</inlineHelpText>
+        <label>Program Name</label>
+        <referenceTo>Program__c</referenceTo>
+        <relationshipLabel>Fees</relationshipLabel>
+        <relationshipName>Fees</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>Program_Start_Date__c</fullName>
+        <label>Program Start Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Project_Management_Specialization__c</fullName>
+        <inlineHelpText>Project Management Specialization(9 Credits)</inlineHelpText>
+        <label>Project Management Specialization</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Project_Specialization_with_thesis__c</fullName>
+        <label>Project Specialization - with thesis</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Rotation_Deposit__c</fullName>
+        <label>Rotation Deposit</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_H__c</fullName>
+        <description>SHA - Housing - Suite - Mod D</description>
+        <label>SHA - Housing - Suite - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Dependent_E__c</fullName>
+        <description>SHA - Housing - Dependent - Mod E</description>
+        <label>SHA - Housing - Dependent - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Dependent__c</fullName>
+        <description>SHA - Housing - Dependent - Mod E</description>
+        <label>SHA - Housing - Dependent - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Suite_Mod_E__c</fullName>
+        <description>SHA - Housing - Suite - Mod D</description>
+        <label>SHA - Housing - Suite - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Type_A_Mod_D__c</fullName>
+        <description>SHA - Housing - Type A - Mod D</description>
+        <label>SHA - Housing - Type A - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Type_A_Mod_E__c</fullName>
+        <description>SHA - Housing - Type A - Mod E</description>
+        <label>SHA - Housing - Type A - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Type_B_Mod_D__c</fullName>
+        <description>SHA - Housing - Type B - Mod D</description>
+        <label>SHA - Housing - Type B - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Type_B_Mod_E__c</fullName>
+        <description>SHA - Housing - Type B - Mod E</description>
+        <label>SHA - Housing - Type B - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Type_C1_Mod_D__c</fullName>
+        <description>SHA - Housing - Type C1 - Mod D</description>
+        <label>SHA - Housing - Type C1 - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Type_C1_Mod_E__c</fullName>
+        <description>SHA - Housing - Type C1 - Mod E</description>
+        <label>SHA - Housing - Type C1 - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Type_C_Mod_D__c</fullName>
+        <description>SHA - Housing - Type C - Mod D</description>
+        <label>SHA - Housing - Type C - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Type_C_Mod_E__c</fullName>
+        <description>SHA - Housing - Type C - Mod E</description>
+        <label>SHA - Housing - Type C - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Type_D1_Mod_D__c</fullName>
+        <description>SHA - Housing - Type D1 - Mod D</description>
+        <label>SHA - Housing - Type D1 - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Type_D1_Mod_E__c</fullName>
+        <description>SHA - Housing - Type D1 - Mod E</description>
+        <label>SHA - Housing - Type D1 - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Type_D_Mod_D__c</fullName>
+        <description>SHA - Housing - Type D - Mod D</description>
+        <label>SHA - Housing - Type D - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Type_D_Mod_E__c</fullName>
+        <description>SHA - Housing - Type D - Mod E</description>
+        <label>SHA - Housing - Type D - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Type_E_Mod_D__c</fullName>
+        <description>SHA - Housing - Type E - Mod D</description>
+        <label>SHA - Housing - Type E - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Type_E_Mod_E__c</fullName>
+        <description>SHA - Housing - Type E - Mod E</description>
+        <label>SHA - Housing - Type E - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Type_F_Mod_D__c</fullName>
+        <description>SHA - Housing - Type F - Mod D</description>
+        <label>SHA - Housing - Type F - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Housing_Type_F_Mod_E__c</fullName>
+        <description>SHA - Housing - Type F - Mod E</description>
+        <label>SHA - Housing - Type F - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SHA_Visa_JW_202__c</fullName>
+        <description>SHA - Visa - JW-202</description>
+        <label>SHA - Visa - JW-202</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>San_Francisco_Premium_Double_Mod_D__c</fullName>
+        <label>San Francisco - Premium Double - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>San_Francisco_Premium_Double_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>San Francisco - Premium Double - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>San_Francisco_Premium_Single_Mod_D__c</fullName>
+        <label>San Francisco - Premium Single - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>San_Francisco_Premium_Single_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>San Francisco - Premium Single - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>San_Francisco_Regular_Double_Mod_D__c</fullName>
+        <label>San Francisco - Regular Double - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>San_Francisco_Regular_Double_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>San Francisco - Regular Double - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Shanghai_Accommodation_Family__c</fullName>
+        <label>Shanghai Accommodation Family</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Shanghai_Deluxe_Single_Room_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Shanghai - Deluxe Single Room - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Shanghai_Deluxe_Single_Room_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Shanghai - Deluxe Single Room - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Shanghai_Double_Room_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Shanghai - Double Room - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Shanghai_Double_Room_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Shanghai - Double Room - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Shanghai_Single_Room_8_Months_Free__c</fullName>
+        <label>Shanghai - Single Room - 8 Months - Free</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Shanghai_Standard_Single_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Shanghai - Standard Single - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Shanghai_Standard_Single_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Shanghai - Standard Single - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Shanghai_Suite_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Shanghai - Suite - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Shanghai_Suite_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Shanghai - Suite - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Shanghai_X2_Mod_D__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Shanghai - X2 - Mod D</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Shanghai_X2_Mod_E__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <label>Shanghai - X2 - Mod E</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Shared_Twin_Annual__c</fullName>
+        <label>Shared Twin (Annual)</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Single_Annual__c</fullName>
+        <label>Single (Annual)</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Single_P1__c</fullName>
+        <description>Hult Tower &amp; Studios
+This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Single P1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Single_P3__c</fullName>
+        <description>Hult Tower &amp; Studios
+This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Hult Tower &amp; Studios,Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Single P3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Solo_P2__c</fullName>
+        <description>Hult Tower &amp; Studios
+This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Hult Tower &amp; Studios ,Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Single P2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Specialization_in_MDM_or_MFIN__c</fullName>
+        <label>Specialization in MDM or MFIN</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Standard_Double_Room_P1__c</fullName>
+        <description>SFO Housing
+This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Standard Double P1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Standard_Double_Room_P2__c</fullName>
+        <description>SFO Housing
+This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Standard Double P2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Standard_Double_Room_P3__c</fullName>
+        <description>Housing SFO
+This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Standard Double P3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Standard_Double_Room_Summer_Term_1_2__c</fullName>
+        <description>SFO Housing</description>
+        <label>Standard Double Room - Summer Term 1&amp;2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Standard_Double_Room_Summer_Term_1__c</fullName>
+        <description>SFO Housing</description>
+        <label>Standard Double Room - Summer Term 1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Standard_Double_Room_Summer_Term_2__c</fullName>
+        <description>SFO Housing</description>
+        <label>Standard Double Room - Summer Term 2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Student_Resources_Activities__c</fullName>
+        <label>Student Resources &amp; Activities</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Studio_P1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Studio P1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Studio_P2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Studio P2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Studio_P3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Studio P3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Studio_Vista_P1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Studio Vista P1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Studio_Vista_P2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Studio Vista P2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Studio_Vista_P3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Studio Vista P3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Toolbox_Case_Study_Pack__c</fullName>
+        <label>Toolbox &amp; Case Study Pack</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Program_Fee__c</fullName>
+        <description>Total Program Fees for this current program and year</description>
+        <inlineHelpText>Total Program Fees for this current program and year</inlineHelpText>
+        <label>Total Program Fee</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Twin_P1__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 1 to 42 weeks</inlineHelpText>
+        <label>Twin P1</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Twin_P2__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 43 to 50 weeks</inlineHelpText>
+        <label>Twin P2</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Twin_P3__c</fullName>
+        <description>This field Label and API Name is hard coded in the development for extracting values from the Fees, please contact development team for any changes.</description>
+        <inlineHelpText>Weekly price for 51 to 52 weeks</inlineHelpText>
+        <label>Twin P3</label>
+        <precision>8</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>UG_Analyst_Certificate__c</fullName>
+        <label>UG Analyst Certificate</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Uniqueness_ID__c</fullName>
+        <label>Uniqueness ID</label>
+        <length>255</length>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Visa_Single_Express_33_Countries__c</fullName>
+        <label>Visa - Single Express 33 Countries</label>
+        <precision>10</precision>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Visa_Single_Express_Other_Countries__c</fullName>
+        <label>Visa - Single Express Other Countries</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Visa_Single_Standard_All_Countries__c</fullName>
+        <label>Visa - Single Standard All Countries</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Visa_Standard_Single_Spouse_and_2_Chi__c</fullName>
+        <label>Visa - Standard Single Spouse &amp; 2 Child</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Visa_Standard_Single_Spouse_and_Child__c</fullName>
+        <label>Visa - Standard Single, Spouse and Child</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Visa_Standard_Single_and_Spouse__c</fullName>
+        <label>Visa - Standard Single and Spouse</label>
+        <precision>12</precision>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Year__c</fullName>
+        <description>Year for which this fee applies</description>
+        <inlineHelpText>Year for which fee applies</inlineHelpText>
+        <label>Year</label>
+        <length>4</length>
+        <required>true</required>
+        <type>Text</type>
+    </fields>
+    <label>Fees</label>
+    <listViews>
+        <fullName>All1</fullName>
+        <columns>Program_Name__c</columns>
+        <columns>Year__c</columns>
+        <columns>Deluxe_Studio_Apartment_P1__c</columns>
+        <columns>Deluxe_Studio_Apartment_P2__c</columns>
+        <columns>Deluxe_Studio_Apartment_P3__c</columns>
+        <columns>Deluxe_Studio_Apartment_Extra_P1__c</columns>
+        <columns>Deluxe_Studio_Apartment_Extra_P2__c</columns>
+        <columns>Deluxe_Studio_Apartment_Extra_P3__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Program_Name__c</field>
+            <operation>startsWith</operation>
+            <value>MBA</value>
+        </filters>
+        <filters>
+            <field>Year__c</field>
+            <operation>equals</operation>
+            <value>2014</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>fee{000000}</displayFormat>
+        <label>Fees Id</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Fees</pluralLabel>
+    <recordTypes>
+        <fullName>BBA_Fees</fullName>
+        <active>true</active>
+        <label>BBA Fees</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Non_BBA_Fees</fullName>
+        <active>true</active>
+        <label>Non-BBA Fees</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>year_format</fullName>
+        <active>true</active>
+        <description>Checks year Firmat</description>
+        <errorConditionFormula>OR(NOT(ISNUMBER(Year__c)),NOT( LEN( Year__c )==4))</errorConditionFormula>
+        <errorMessage>Year should be a Number and 4 digits! ex : 2012</errorMessage>
+    </validationRules>
+</CustomObject>

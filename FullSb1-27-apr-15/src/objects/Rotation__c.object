@@ -1,0 +1,1349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <inlineHelpText>This field should ONLY be used for EMBA programs</inlineHelpText>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Address_Line1__c</fullName>
+        <label>Address Line 1</label>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Address_Line2__c</fullName>
+        <label>Address Line 2</label>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Administrative_Processing__c</fullName>
+        <label>Administrative Processing?</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Are_you_registered_to_rotate_to_London__c</fullName>
+        <inlineHelpText>Are you rotating to London at any point in Module D or E?
+
+If London is your HOME CAMPUS, select &quot;No.&quot;</inlineHelpText>
+        <label>Are you registered to rotate to London?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes, I will rotate to London at least once.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No, my rotation plans do not include London.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Attendance__c</fullName>
+        <label>Attendance</label>
+        <picklist>
+            <picklistValues>
+                <fullName>EMBA Monthly</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EMBA Weekly</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Full Time</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Attended_Orientation_Checked_In__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Attended Orientation/Checked-In</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Backup_Rot_Housing_Module_D__c</fullName>
+        <description>This field is using in HRP Portal</description>
+        <label>Backup Rot. Housing - Module D</label>
+        <picklist>
+            <picklistValues>
+                <fullName>I do not want Housing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SHA - Housing - Type A - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shanghai - Suite - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shanghai - Double Room - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shanghai - Deluxe Single Room - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shanghai - Standard Single - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Single - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Premium Single - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Twin - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Premium Twin - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Studio - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Studio Vista - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Apartment - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Apartment Vista - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Penthouse Luxury Studio - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Deluxe Studio Apartment - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Deluxe Studio Apt Extra - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Bunk Studio - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Bunk Studio Vista - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Francisco - Premium Single - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Francisco - Premium Double - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Francisco - Regular Double - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New York - Double Room - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New York - Single - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New York - Premium Single - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Single Room - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Double Room - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Single Shared - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Single of Three - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Double of Three - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Backup_Rot_Housing_Module_E__c</fullName>
+        <description>This field is using in HRP portal</description>
+        <label>Backup Rot. Housing - Module E</label>
+        <picklist>
+            <picklistValues>
+                <fullName>I do not want Housing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SHA - Housing - Type D - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shanghai - Suite - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shanghai - Double Room - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shanghai - Deluxe Single Room - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shanghai - Standard Single - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Single - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Premium Single - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Twin - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Premium Twin - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Studio - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Studio Vista - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Apartment - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Apartment Vista - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Penthouse Luxury Studio - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Deluxe Studio Apartment - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Deluxe Studio Apt Extra - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Bunk Studio - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Bunk Studio Vista - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Francisco - Premium Single - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Francisco - Premium Double - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Francisco - Regular Double - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New York - Double Room - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New York - Single - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New York - Premium Single - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Single Room - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Double Room - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Single Shared - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Single of Three - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Double of Three - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Booking_Policy__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is using in HRP Portal</description>
+        <label>Booking Policy</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>China_PoE_Entry_Date__c</fullName>
+        <label>China PoE Entry Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Chinese_Visa_Number__c</fullName>
+        <label>Chinese Visa Number</label>
+        <length>25</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <label>City</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>City_of_Birth__c</fullName>
+        <description>Taking from contact record..removed from pagelayout</description>
+        <label>City of Birth</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Clean_Rotation_Name__c</fullName>
+        <formula>text(Type__c)&amp;&quot; : &quot;&amp;text(Rotation_Campus__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Clean Rotation Name</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Confirmed_Rotation_Housing__c</fullName>
+        <label>Confirmed Rotation Housing</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Hult Accommodation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Independent Housing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Student Exchange</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Consulate_of_Interview__c</fullName>
+        <label>Consulate of Interview</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <label>Country</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Country_of_Birth__c</fullName>
+        <description>Taking from contact record .removed from pagelayout</description>
+        <inlineHelpText>Enter the country where you were born.</inlineHelpText>
+        <label>Country of Birth</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>Rotations</relationshipLabel>
+        <relationshipName>Rotations</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Country_of_Citizenship__c</fullName>
+        <description>Taking from contact record.removed from pagelayout</description>
+        <label>Country of Citizenship</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>Rotations (Country of Citizenship)</relationshipLabel>
+        <relationshipName>CitizenshipRotations</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Country_of_Permanent_Residence__c</fullName>
+        <description>Taking from contact record..removed from page layout</description>
+        <inlineHelpText>Enter the country where you have legally established your permanent residence.</inlineHelpText>
+        <label>Country of Permanent Residence</label>
+        <referenceTo>Country__c</referenceTo>
+        <relationshipLabel>Rotations (Country of Permanent Residence)</relationshipLabel>
+        <relationshipName>PermanentResidencyRotations</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Current_Address__c</fullName>
+        <label>Current Address</label>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Birth__c</fullName>
+        <description>Taking from contact record..removed from page layout</description>
+        <inlineHelpText>Enter the day when you were born.</inlineHelpText>
+        <label>Date of Birth</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Details_of_your_Diet__c</fullName>
+        <inlineHelpText>Please provide details of your diet so that Hult can better plan for your needs.</inlineHelpText>
+        <label>Details of your Diet</label>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Details_of_your_Handicap__c</fullName>
+        <inlineHelpText>Please provide details of your handicap so that Hult can better plan for your needs.</inlineHelpText>
+        <label>Details of your Handicap</label>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Details_of_your_condition_alergies__c</fullName>
+        <inlineHelpText>Please provide details of your condition/alergies so that Hult can better plan for your needs.</inlineHelpText>
+        <label>Details of your condition/alergies</label>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Dietary_needs__c</fullName>
+        <defaultValue>false</defaultValue>
+        <inlineHelpText>Do you have specific dietary needs or restrictions?
+Ex: Vegetarian,Kosher, Halal, etc.</inlineHelpText>
+        <label>Dietary needs</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Earliest_Elective_Start_Date__c</fullName>
+        <label>Earliest Elective Start Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <label>Email</label>
+        <type>Email</type>
+    </fields>
+    <fields>
+        <fullName>Expected_Arrival_Date_on_Campus__c</fullName>
+        <label>Expected Arrival Date on Campus</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Father_Name__c</fullName>
+        <inlineHelpText>Enter your father&apos;s name</inlineHelpText>
+        <label>Father&apos;s Name</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>FedEx_Tracking_Number__c</fullName>
+        <label>FedEx Tracking Number</label>
+        <length>25</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Finance_Page__c</fullName>
+        <label>Finance Page</label>
+        <referenceTo>Opportunity_Finance__c</referenceTo>
+        <relationshipLabel>Rotations</relationshipLabel>
+        <relationshipName>Rotations</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Home_Campus__c</fullName>
+        <formula>Student__r.OP_Campus__c</formula>
+        <label>Home Campus</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Hult_Email__c</fullName>
+        <formula>Student__r.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Hult Email</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>I_20__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>I-20</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>I_94__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>I-94</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>If_NHS_treatment_recieved_have_you_paid__c</fullName>
+        <inlineHelpText>If you have received NHS medical treatment, did you have to pay for the treatment?</inlineHelpText>
+        <label>If NHS treatment recieved,have you paid?</label>
+        <picklist>
+            <controllingField>had_treatment_on_the_NHS_Whilst_in_Uk__c</controllingField>
+            <picklistValues>
+                <fullName>No</fullName>
+                <controllingFieldValues>No</controllingFieldValues>
+                <controllingFieldValues>Yes</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <controllingFieldValues>Yes</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Insurance__c</fullName>
+        <formula>if(isblank(Finance_Page__r.Insurance_Company_FS__c),&quot;Waived&quot;,Finance_Page__r.Insurance_Company_FS__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Insurance Company</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Is_Rotating__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Is Rotating</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Languages_spoken__c</fullName>
+        <description>Taking from contact record...removed from pagelayout</description>
+        <inlineHelpText>Please list all languages that you speak. 
+Separate with a comma.</inlineHelpText>
+        <label>Languages spoken</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Latest_Elective_End_Date__c</fullName>
+        <label>Latest Elective End Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Marital_Status__c</fullName>
+        <description>Taking from contact record ....removed from pagelayout</description>
+        <label>Marital Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Single</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Married</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Widowed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Divorced</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Mobile__c</fullName>
+        <description>Taking from contact record...removed from pagelayout</description>
+        <inlineHelpText>Please include the COUNTRY CODE.
+If you do not have a mobile phone, enter the number where you can best be reached during this academic yea</inlineHelpText>
+        <label>Mobile</label>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Mother_Name__c</fullName>
+        <inlineHelpText>Enter your mother&apos;s name</inlineHelpText>
+        <label>Mother&apos;s Name</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Name__c</fullName>
+        <formula>TEXT(Student__r.Salutation)+&apos; &apos;+ Student__r.FirstName+&apos; &apos; + Student__r.LastName</formula>
+        <inlineHelpText>Student First Name  Last Name</inlineHelpText>
+        <label>Name</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Need_handicap_access_while_rotation__c</fullName>
+        <defaultValue>false</defaultValue>
+        <inlineHelpText>wheelchair access needed, etc.</inlineHelpText>
+        <label>Need handicap access while rotation</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Passport_F_1_Visa__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Passport &amp; F-1 Visa</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Postal_Code__c</fullName>
+        <label>Postal Code</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Nationalities__c</fullName>
+        <inlineHelpText>If you were previously a citizen of another country or countries but are no longer, list those countries here.
+If not applicable, enter &quot;N/A&quot;</inlineHelpText>
+        <label>Previous Nationalities</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Visa_Refusal_Notes__c</fullName>
+        <label>Previous Visa Refusal Notes</label>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Previously_Studied_in_UK__c</fullName>
+        <label>Previously Studied in UK?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>No,I have never studied in the UK before</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes,on a UK/EEA/EU/Swiss passport</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes,on a Tier 4 (General) Student Visa</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes,in Student Visitor status</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Program__c</fullName>
+        <description>Displays Contact Program</description>
+        <formula>Student__r.Program_preParsed__c</formula>
+        <label>Program</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Region_of_Origin__c</fullName>
+        <label>Region of Origin</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Religion__c</fullName>
+        <label>Religion</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Roommate_Selection__c</fullName>
+        <description>This field is using in HRP portal</description>
+        <label>Roommate Selection</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Rot_Housing_Module_D__c</fullName>
+        <description>This field is using in HRP portal</description>
+        <inlineHelpText>This field is using in HRP portal</inlineHelpText>
+        <label>Rot. Housing - Module D</label>
+        <picklist>
+            <picklistValues>
+                <fullName>I do not want Housing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SHA - Housing - Type A - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shanghai - Suite - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shanghai - Double Room - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shanghai - Deluxe Single Room - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shanghai - Standard Single - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Single - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Premium Single - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Twin - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Premium Twin - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Studio - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Studio Vista - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Apartment - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Apartment Vista - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Penthouse Luxury Studio - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Deluxe Studio Apartment - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Deluxe Studio Apt Extra - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Bunk Studio - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Bunk Studio Vista - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Francisco - Premium Single - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Francisco - Premium Double - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Francisco - Regular Double - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New York - Double Room - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New York - Single - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New York - Premium Single - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Single Room - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Double Room - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Single Shared - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Single of Three - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Double of Three - Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Rot_Housing_Module_E__c</fullName>
+        <description>This field is using in HRP portal</description>
+        <inlineHelpText>This field is using in HRP portal</inlineHelpText>
+        <label>Rot. Housing - Module E</label>
+        <picklist>
+            <picklistValues>
+                <fullName>I do not want Housing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SHA - Housing - Type D - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shanghai - Suite - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shanghai - Double Room - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shanghai - Deluxe Single Room - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shanghai - Standard Single - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Single - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Premium Single - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Twin - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Premium Twin - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Studio - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Studio Vista - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Apartment - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Apartment Vista - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Penthouse Luxury Studio - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Deluxe Studio Apartment - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Deluxe Studio Apt Extra - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Bunk Studio - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London - Bunk Studio Vista - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Francisco - Premium Single - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Francisco - Premium Double - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Francisco - Regular Double - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New York - Double Room - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New York - Single - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New York - Premium Single - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Single Room - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Double Room - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Single Shared - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Single of Three - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai - Double of Three - Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Rotation_Campus__c</fullName>
+        <inlineHelpText>Please select the Rotation campus you need to travel.</inlineHelpText>
+        <label>Rotation Campus</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Boston</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dubai</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>London</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Francisco</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shanghai</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New York</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Rotation_Country__c</fullName>
+        <formula>IF( ISPICKVAL(  Rotation_Campus__c , &apos;London&apos;) , &apos;UK&apos; , 
+IF( ISPICKVAL(  Rotation_Campus__c , &apos;Boston&apos;) , &apos;United States&apos; , 
+IF( ISPICKVAL(  Rotation_Campus__c , &apos;New York&apos;) , &apos;United States&apos; , 
+IF( ISPICKVAL(  Rotation_Campus__c , &apos;Dubai&apos;) , &apos;UAE&apos; , 
+IF( ISPICKVAL(  Rotation_Campus__c , &apos;San Francisco&apos;) , &apos;United States&apos; , 
+IF( ISPICKVAL(  Rotation_Campus__c , &apos;Shangai&apos;) , &apos;China&apos; , &apos;&apos; ))))))</formula>
+        <label>Rotation Country</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Rotation_Number__c</fullName>
+        <label>Rotation Number</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Rotation 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rotation 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Rotation_Orientation_Date__c</fullName>
+        <label>Rotation Orientation Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SEVIS_Number__c</fullName>
+        <label>SEVIS Number</label>
+        <length>25</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>SEVIS_Transfer_Release_Date__c</fullName>
+        <inlineHelpText>SEVIS Transfer Release Date/Change of Status Application Date</inlineHelpText>
+        <label>SEVIS Transfer Release Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Short_term_Elective__c</fullName>
+        <label>Short-term Elective</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Short_term__c</fullName>
+        <label>Short-term?</label>
+        <length>25</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Specific_medical_needs_or_Alergies__c</fullName>
+        <defaultValue>false</defaultValue>
+        <inlineHelpText>Diabetic, allergic to penecillin, etc.</inlineHelpText>
+        <label>Specific medical needs or Alergies</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <label>State</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Student_ID__c</fullName>
+        <formula>Student__r.Student_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Student ID</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Student__c</fullName>
+        <label>Student</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Rotations</relationshipLabel>
+        <relationshipName>Rotations</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>Student_has_second_passport__c</fullName>
+        <formula>Student__r.Have_second_Passport__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Student has second passport</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Travel_Agent_name_if_used__c</fullName>
+        <label>Travel Agent name (if used)</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <label>Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Mod D</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mod E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mod D &amp; E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>UK_Visa_Status__c</fullName>
+        <label>UK Visa Status</label>
+        <length>35</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>US2_Campuses_in_a_Row__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>2 US. Campuses in a Row?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Visa_Delay__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Visa Delay?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Visa_Interview_Date__c</fullName>
+        <label>Visa Interview Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Visa_Rejected_Before__c</fullName>
+        <inlineHelpText>If a visa application has been rejected in the past, provide the relevant country and details about why it was rejected.</inlineHelpText>
+        <label>Visa Rejected Before?</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Visa_SubStage__c</fullName>
+        <label>Visa SubStage</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1a. Initial VC Notification Sent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1b. Student responsive; requesting visa docs</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1c. Completing visa docs</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2a. Visa docs complete, with SS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3a. Visa Docs Sent to Home Campus VC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3b. Visa docs with Student</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4. Visa Check Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5a. Consulate Appointment Secured</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5b. Visa pending following visa appt/submission of app to embassy or agent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6a. Visa Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6b. Visa Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6c. Visa Appeal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6d. Visa Appeal Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6e. Visa Appeal Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7. Visa/Permit in Hand</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Visa Required</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CAX Risk</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Home Campus Assistance Required</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Visa_Track_Added__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Visa Track Added?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Visa_Track__c</fullName>
+        <label>Visa Track</label>
+        <referenceTo>Visa_Track__c</referenceTo>
+        <relationshipLabel>Rotations</relationshipLabel>
+        <relationshipName>Rotations</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Visit_Visa__c</fullName>
+        <description>This field is updating from HRP portal</description>
+        <label>Visit Visa</label>
+        <picklist>
+            <picklistValues>
+                <fullName>30-day Visit Visa (AED 810)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3-month Visit Visa (AED 2850)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>I do not require a Visit Visa for my rotation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Will_Dependents_Accompany_on_Rotation__c</fullName>
+        <inlineHelpText>Let us know how many dependents will join you. This is for both visa and, depending on campus, housing purposes.
+
+LEGAL SPOUSES and DEPENDENT CHILDREN only.
+
+Please do NOT list fiances, significant others, parents, etc.</inlineHelpText>
+        <label>Will Dependents Accompany on Rotation?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Yellow_Fever_Immunizations_Received__c</fullName>
+        <label>Yellow Fever Immunizations Received?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>had_treatment_on_the_NHS_Whilst_in_Uk__c</fullName>
+        <inlineHelpText>Required for visa application purposes.</inlineHelpText>
+        <label>Had treatment on the NHS Whilst in Uk?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <label>Rotation</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Rotation Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Rotations</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Right_Visa_Track</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(OR(
+text(Rotation_Campus__c ) = text(Visa_Track__r.Campus1__c),
+text(Rotation_Campus__c) = text(Visa_Track__r.Campus2__c),
+text(Rotation_Campus__c) = text( Visa_Track__r.Campus_3__c )))
+&amp;&amp;
+ $User.Profile_Name__c   &lt;&gt; &apos;System Administrator&apos;
+&amp;&amp;
+ischanged( Visa_Track__c )</errorConditionFormula>
+        <errorMessage>Please use a Visa Track that applies to the current Rotation Campus</errorMessage>
+    </validationRules>
+</CustomObject>

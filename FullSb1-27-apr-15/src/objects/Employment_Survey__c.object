@@ -1,0 +1,2246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Annual_Compensation_excl_bonus_in_US__c</fullName>
+        <description>Populated from the contact</description>
+        <label>Annual Compensation excl bonus in USD</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Are_you_currently_looking_for_a_job__c</fullName>
+        <inlineHelpText>If you selected &apos;Accepted an offer&apos;, &apos;Offered but rejected&apos; or &apos;Offered but withdrew&apos; then please enter the offer details in the below section. If the student hasn&apos;t received an offer, please skip to the &apos;What are your plans post-graduation&apos; section</inlineHelpText>
+        <label>Are you currently looking for a job?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes, but I havent received an offer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes, have received an offer but will not accept it</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes, I am seeking, my offer was withdrawn by company</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>I have already accepted an offer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No I am not seeking employment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Have an offer but undecided</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Campus__c</fullName>
+        <label>Campus</label>
+        <length>50</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Campus_formula__c</fullName>
+        <formula>Student__r.Hult_Campus__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Campus formula</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Can_t_find_on_TS__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Can&apos;t find on TS</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>City_Bus__c</fullName>
+        <label>City</label>
+        <referenceTo>City__c</referenceTo>
+        <relationshipLabel>Employment Surveys (City)</relationshipLabel>
+        <relationshipName>Employment_Surveys1</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <label>City</label>
+        <referenceTo>City__c</referenceTo>
+        <relationshipLabel>Employment Surveys (City)</relationshipLabel>
+        <relationshipName>Employment_Surveys2</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Comp_Base__c</fullName>
+        <label>Comp: Base</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Comp_Other_guaranteed_comp__c</fullName>
+        <label>Comp: Other guaranteed comp</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Comp_Signing_Bonus__c</fullName>
+        <label>Comp: Signing Bonus</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Comp_Stock_Options__c</fullName>
+        <label>Comp: Stock Options</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Comp__c</fullName>
+        <description>Converts base salary field into USD using the HCP_Currency__c.Conversion_Rate_to_USD value</description>
+        <formula>Comp_Base__c *  HCP_Currencies_Lookup__r.Conversion_Rate_to_USD__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Comp: Base in USD</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Company_Bus__c</fullName>
+        <inlineHelpText>Use this lookup field to see if the company already exists as an Account in HCP Salesforce. If found, please select and move on to the &apos;Industry&apos; question. If not found, please enter the company name in the field below.</inlineHelpText>
+        <label>Company (CR Account in HCP?)</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Employment Surveys (Company (lookup if exists))</relationshipLabel>
+        <relationshipName>Employment_Surveys1</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Company_Formula__c</fullName>
+        <description>Merges each of the 4 company fields into one field for easy reporting on company name</description>
+        <formula>IF( TS_Application__c &lt;&gt; &quot;&quot;, TS_Application__r.ts2__Account__r.Name ,
+IF( Offer_Company_Name__c &lt;&gt; &quot;&quot; , Offer_Company_Name__c ,
+IF( Offer_Company__c &lt;&gt; &quot;&quot; , Offer_Company__r.Name ,
+IF( Name_of_Bus__c &lt;&gt; &quot;&quot; , Name_of_Bus__c ,
+IF( Company_Bus__c &lt;&gt; &quot;&quot; , Company_Bus__r.Name , &quot;&quot; )))))</formula>
+        <label>Company.</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Company_Name__c</fullName>
+        <formula>IF( ISBLANK(TS_Application__c  ), 
+
+IF (ISBLANK(Offer_Company__r.Name ), Offer_Company_Name__c , Offer_Company__r.Name),  TS_Application__r.ts2__Account__r.Name )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Company Name</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Company_Size__c</fullName>
+        <label>Company Size</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1-10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>11-50</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>51-200</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>201-500</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>501-1000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1001-5000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5001-10000</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10,001+ employees</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Counter_Grad_School__c</fullName>
+        <description>For reporting purposes only</description>
+        <formula>IF(ISPICKVAL( What_are_you_doing_now__c , &apos;Continuing Education&apos; ) , TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Counter: Grad School</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Counter_Not_Seeking_Employment__c</fullName>
+        <formula>IF( ISPICKVAL(   Are_you_currently_looking_for_a_job__c  , &apos;No I am not seeking employment&apos; ), TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Counter: Not Seeking Employment</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Counter_Returning_to_Previous_Employer__c</fullName>
+        <description>For reporting purposes only</description>
+        <formula>IF(
+  AND(
+     ISPICKVAL( What_are_you_doing_now__c , &apos;Returning to my previous employer&apos; ) ,
+     OR(
+       NOT(ISBLANK( Previous_Job_Company_Name__c )) ,
+       NOT(ISBLANK(  Previous_Job_Company__c  ))
+       )
+      ) ,
+  TRUE , FALSE
+  )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Counter: Returning to Previous Employer</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Counter_Still_Seeking_Employment__c</fullName>
+        <description>For reporting purposes only</description>
+        <formula>IF( 
+   OR(
+     ISPICKVAL( Are_you_currently_looking_for_a_job__c , &apos;Yes, but i havent received an offer&apos; ),
+     ISPICKVAL( Are_you_currently_looking_for_a_job__c , &apos;Yes, have received an offer but will not accept it&apos;) ,
+     ISPICKVAL( Are_you_currently_looking_for_a_job__c , &apos;Yes, I am seeking, my offer was withdrawn by company&apos;)
+     ) ,
+   TRUE , FALSE
+  )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Counter: Still Seeking Employment</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Employment_Start_Date__c</fullName>
+        <label>Employment Start Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Expected_Length__c</fullName>
+        <label>Expected Length of internship</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Graduation_Years__c</fullName>
+        <formula>Student__r.Graduation_Year__c</formula>
+        <label>Graduation Year</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>HCP_Currencies_Lookup__c</fullName>
+        <label>HCP Currencies</label>
+        <referenceTo>HCP_Currencies__c</referenceTo>
+        <relationshipLabel>Employment Surveys</relationshipLabel>
+        <relationshipName>Employment_Surveys</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Industry_Bus__c</fullName>
+        <inlineHelpText>Once you entered the company name, please proceed with entering the rest of the company and job detail fields within this section.</inlineHelpText>
+        <label>Industry</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Apparel / Retail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Automotive / Machinery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Banking / Finance / Insurance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chambers / Industry Associations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consulting / Market Research</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumer Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Energy/Natural Resources/Mining/Utility</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Food &amp; Beverage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Government / Not For Profit / NGO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Headhunting / Recruiting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare / Pharmaceuticals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Law / Legal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manufacturing / Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Media/Publications/Communications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Real Estate/Construction/Architecture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sports/Events/Entertainment/Recreation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Travel / Hospitality</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Industry_Formula__c</fullName>
+        <description>Merges the 3 Industry fields into one convenient field for reporting purposes</description>
+        <formula>IF( NOT(ISPICKVAL(Job_Industry__c , &quot;&quot;) ) , TEXT(Job_Industry__c) ,
+IF( NOT(ISPICKVAL(Industry_Bus__c , &quot;&quot;) ) , TEXT(Industry_Bus__c) ,
+IF( NOT(ISPICKVAL(Industry__c , &quot;&quot;) ) , TEXT(Industry__c) , &quot;&quot; )))</formula>
+        <label>Industry.</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Industry__c</fullName>
+        <label>Industry</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Apparel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Apparel / Retail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Automotive / Machinery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Banking / Finance / Insurance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chambers / Industry Associations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Communications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consulting / Market Research</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumer Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Energy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Energy/Natural Resources/Mining/Utility</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Food &amp; Beverage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Government</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Government / Not For Profit / NGO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Headhunting / Recruiting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare / Pharmaceuticals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Law / Legal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manufacturing / Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Media</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Media/Publications/Communications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not For Profit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Real Estate/Construction/Architecture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recreation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sports/Events/Entertainment/Recreation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Travel / Hospitality</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Job_City__c</fullName>
+        <label>City</label>
+        <referenceTo>City__c</referenceTo>
+        <relationshipLabel>Employment Surveys (City)</relationshipLabel>
+        <relationshipName>Employment_Surveys3</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Job_Country__c</fullName>
+        <formula>Job_City__r.Country__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Job Country</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Job_Function__c</fullName>
+        <label>Job Function</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Administration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Business Development and Sales</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Entrepreneurship</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Finance and Accounting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Health Care</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Legal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Multimedia</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Purchases</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Real Estate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research and Development</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Strategic Planning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tech</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Job_Industry__c</fullName>
+        <label>Job Industry</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Apparel / Retail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Automotive / Machinery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Banking / Finance / Insurance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chambers / Industry Associations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consulting / Market Research</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumer Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Energy/Natural Resources/Mining/Utility</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Food &amp; Beverage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Government / Not For Profit / NGO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Headhunting / Recruiting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Healthcare / Pharmaceuticals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Law / Legal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manufacturing / Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Media / Publications / Communications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Real Estate/Construction/Architecture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shipping</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sports/Events/Entertainment/Recreation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Travel / Hospitality</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Job_Title_Bus__c</fullName>
+        <label>Job Title</label>
+        <length>80</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Job_Title__c</fullName>
+        <label>Job Title</label>
+        <length>80</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Local_City__c</fullName>
+        <description>Populated from the contact</description>
+        <label>Local City</label>
+        <referenceTo>City__c</referenceTo>
+        <relationshipLabel>Employment Surveys</relationshipLabel>
+        <relationshipName>Employment_Surveys</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_Phone__c</fullName>
+        <description>Populated from the contact</description>
+        <label>Mobile Phone</label>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Most_recent_function_experience__c</fullName>
+        <description>Populated from the contact</description>
+        <label>Most recent function experience</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Accounting / Auditing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Administrative</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Advertising</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Analyst</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Art / Creative</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Business Development</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Distribution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Design</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Finance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>General Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Health Care Provider</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Information Technology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Legal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Purchasing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Project Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Production</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quality Assurance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Science</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Strategy / Planning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Supply Chain</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Training</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Writing / Editing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Most_recent_industry_experience__c</fullName>
+        <description>Populated from the contact</description>
+        <label>Most recent industry experience</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Airlines/Aviation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Alternative Dispute Resolution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Alternative Medicine</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Animation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Apparel &amp; Fashion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Architecture &amp; Planning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Arts and Crafts</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Automotive</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aviation &amp; Aerospace</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Banking</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Biotechnology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Broadcast Media</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Building Materials</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Business Supplies and Equipment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Capital Markets</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Civic &amp; Social Organization</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Civil Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Commercial Real Estate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Computer &amp; Network Security</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Computer Games</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Computer Hardware</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Computer Networking</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Computer Software</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Construction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumer Electronics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumer Goods</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumer Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cosmetics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dairy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Defense &amp; Space</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Design</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Education Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E-Learning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electrical/Electronic Manufacturing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Environmental Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Events Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Executive Office</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Facilities Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Farming</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Financial Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fine Art</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fishery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Food &amp; Beverages</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Food Production</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fund-Raising</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Furniture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gambling &amp; Casinos</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Glass, Ceramics &amp; Concrete</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Government Administration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Government Relations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Graphic Design</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Health, Wellness and Fitness</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Higher Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hospital &amp; Health Care</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hospitality</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Human Resources</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Import and Export</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Individual &amp; Family Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Industrial Automation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Information Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Information Technology and Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>International Affairs</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>International Trade and Development</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Internet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investment Banking</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Investment Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Judiciary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Law Enforcement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Law Practice</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Legal Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Legislative Office</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Leisure, Travel &amp; Tourism</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Libraries</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Logistics and Supply Chain</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Luxury Goods &amp; Jewelry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Machinery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Management Consulting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Maritime</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing and Advertising</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Market Research</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mechanical or Industrial Engineering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Media Production</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medical Devices</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medical Practice</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mental Health Care</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Military</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mining &amp; Metals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Motion Pictures and Film</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Museums and Institutions</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Music</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nanotechnology</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Newspapers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-Profit Organization Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oil &amp; Energy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Online Media</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Outsourcing/Offshoring</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Package/Freight Delivery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Packaging and Containers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Paper &amp; Forest Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Performing Arts</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pharmaceuticals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Philanthropy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Photography</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Plastics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Political Organization</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Primary/Secondary Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Printing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Professional Training &amp; Coaching</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Program Development</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Policy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Relations and Communications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Safety</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Publishing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Railroad Manufacture</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ranching</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Real Estate</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recreational Facilities and Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Religious Institutions</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Renewables &amp; Environment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Restaurants</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retail</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Security and Investigations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Semiconductors</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shipbuilding</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sporting Goods</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sports</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Staffing and Recruiting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Supermarkets</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Textiles</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Think Tanks</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tobacco</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Translation and Localization</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transportation/Trucking/Railroad</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Utilities</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Venture Capital &amp; Private Equity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Veterinary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Warehousing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wholesale</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wine and Spirits</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wireless</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Writing and Editing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Name_of_Bus__c</fullName>
+        <inlineHelpText>If you cannot find the company name using the lookup in the previous field, please enter the name of the company in here.</inlineHelpText>
+        <label>Company (not in HCP)</label>
+        <length>80</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Offer_Accepted_Date__c</fullName>
+        <label>Offer Accepted Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Offer_Company_Name__c</fullName>
+        <inlineHelpText>If you cannot find the company name using the lookup in the previous field, please enter the name of the company in here and then move on to the &apos;Ownership Type&apos; question.</inlineHelpText>
+        <label>Offer Company (not in HCP)</label>
+        <length>80</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Offer_Company__c</fullName>
+        <inlineHelpText>Use this lookup field to see if the company already exists as an Account in HCP Salesforce. If found, please select and move on to the &apos;Ownership Type&apos; question. If not found, please enter the company name in the field below.</inlineHelpText>
+        <label>Offer Company (CR Account in HCP?)</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Employment Surveys (Company)</relationshipLabel>
+        <relationshipName>Employment_Surveys2</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Offer_Received_Date__c</fullName>
+        <label>Offer Received Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Other__c</fullName>
+        <label>Other</label>
+        <length>1000</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Other_please_specify__c</fullName>
+        <label>Other, please specify</label>
+        <length>500</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Ownership_Type__c</fullName>
+        <inlineHelpText>Having entered the company name, please complete this field and the remaining company/job detail fields within this section.</inlineHelpText>
+        <label>Ownership Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Government Agency</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-Profit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partnership</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Privately Held</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Company</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Personal_Email__c</fullName>
+        <description>Populated from the Contact</description>
+        <label>Personal Email</label>
+        <type>Email</type>
+    </fields>
+    <fields>
+        <fullName>Position_Formula__c</fullName>
+        <description>Merges each of the 3 job title fields into one convenient field for reporting.</description>
+        <formula>IF( TS_Application__c &lt;&gt; &quot;&quot;, TS_Application__r.ts2__Job__r.Name ,
+IF( Job_Title__c &lt;&gt; &quot;&quot; , Job_Title__c ,
+IF(  Job_Title_Bus__c &lt;&gt; &quot;&quot; , Job_Title_Bus__c , &quot;&quot; )))</formula>
+        <label>Position.</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Graduation_Internship__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is the student continuing with an internship which they were doing pre-graduation?</description>
+        <inlineHelpText>Was the student doing their internship before they graduated?</inlineHelpText>
+        <label>Continuing Internship?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Job_Company_Name__c</fullName>
+        <description>Populated from the contact</description>
+        <inlineHelpText>If you cannot find the company name using the lookup in the previous field, please enter the name of the company in here and then move onto the &apos;Previous Job Title&apos; question.</inlineHelpText>
+        <label>Previous Company (not in HCP)</label>
+        <length>80</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Job_Company__c</fullName>
+        <description>Populated from the contact</description>
+        <inlineHelpText>Use this lookup field to see if the company exists as an Account in HCP Salesforce. If found, please select and move on to the &apos;Previous Job Title&apos; question. If not found, please enter the company name in the field below.</inlineHelpText>
+        <label>Previous Company (CR Account in HCP?)</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Employment Surveys</relationshipLabel>
+        <relationshipName>Employment_Surveys</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Job_Start_Date__c</fullName>
+        <description>Populated from the contact</description>
+        <label>Previous Job Start Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Job_Title__c</fullName>
+        <description>Populated from the contact</description>
+        <label>Previous Job Title</label>
+        <length>80</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Retroactively_Triggers_Workflow__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>To be used for triggering workflow rule field updates on records which already exist</description>
+        <label>Retroactively Triggers Workflow</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Salary_if_any_in_USD__c</fullName>
+        <label>Salary in USD</label>
+        <precision>18</precision>
+        <scale>2</scale>
+        <type>Number</type>
+    </fields>
+    <fields>
+        <fullName>Source_of_Information__c</fullName>
+        <label>Source of Information</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Student filled out survey</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Student spoke to CSA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Student spoke to CR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CS found out through Linked In</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Talent Solutions Reported</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Source_of_Job_Lead__c</fullName>
+        <label>Source of Job Lead</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Company attending COH</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corporate Network on Campus</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CR Introduction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <label>Start Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Started_Job__c</fullName>
+        <description>For reporting purposes and CS dashboards, has student actually started their job already</description>
+        <formula>if( 
+
+ISPICKVAL( Are_you_currently_looking_for_a_job__c , &apos;I have already accepted an offer&apos;)
+&amp;&amp;
+ NOT(ISBLANK(Employment_Start_Date__c))
+&amp;&amp;
+Employment_Start_Date__c &lt;  TODAY() ,
+
+&apos;Yes&apos;, &apos;&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Started Job</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <inlineHelpText>When this is set to &quot;Publish&quot; and Are you looking for a job? is NOT equal to &quot;Have an offer but undecided&quot; this Employment Survey will be processed into the HCP system</inlineHelpText>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Publish</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Student_Contact_ID__c</fullName>
+        <formula>Student__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Student Contact ID</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Student_Type__c</fullName>
+        <formula>if(Student__r.RecordTypeId = &quot;012U00000009QX9&quot; , &quot;Alumni&quot;, &quot;Student&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Student Type</label>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>Student__c</fullName>
+        <label>Student</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Employment Surveys</relationshipLabel>
+        <relationshipName>Employment_Surveys</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TS_Application__c</fullName>
+        <inlineHelpText>To view all of this students TS Applications, click the lookup button and enter &apos;APP&apos; into the search bar,then click &apos;Go&apos;. If you have selected a TS Application, please move onto the Company lookup question below.</inlineHelpText>
+        <label>TS Application Lookup</label>
+        <referenceTo>ts2__Application__c</referenceTo>
+        <relationshipLabel>Employment Surveys</relationshipLabel>
+        <relationshipName>Employment_Surveys</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TS_Internship_Application__c</fullName>
+        <description>Lookup value for existing TS applications. To be used for the internships section of Employment Survey</description>
+        <inlineHelpText>To view all of this students TS internship Applications, click the lookup button and enter &apos;APP&apos; into the search bar,then click &apos;Go&apos;. If you have selected a TS internship Application, please move onto the Company lookup question below.</inlineHelpText>
+        <label>TS Internship Application Lookup</label>
+        <referenceTo>ts2__Application__c</referenceTo>
+        <relationshipLabel>Employment Surveys (TS Interview Application)</relationshipLabel>
+        <relationshipName>Employment_Surveys1</relationshipName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Top_3_Job_Sources__c</fullName>
+        <label>Top 3 Job Sources</label>
+        <picklist>
+            <picklistValues>
+                <fullName>COH</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LinkedIn</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Job Boards</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CR&apos;s TS Service</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <label>Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Service</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consulting</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Undergraduate_Major__c</fullName>
+        <description>Populated from the contact</description>
+        <label>Undergraduate Major</label>
+        <length>255</length>
+        <type>Text</type>
+    </fields>
+    <fields>
+        <fullName>What_are_you_doing_now__c</fullName>
+        <label>What are your plans post-graduation?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Continuing Education</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Returning to my previous employer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Working for my family business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Starting a business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Working as an intern at a company</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Postponing job search</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other – please specify</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Working in the job listed above</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Work_Authorisation_Status_for_Offer__c</fullName>
+        <label>Work Authorisation Status for Offer</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Non-Permanent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Permanent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>of_Self_Initiated_Job_Apps_to_Date__c</fullName>
+        <label># of Self-Initiated Job Apps to Date</label>
+        <precision>18</precision>
+        <scale>0</scale>
+        <type>Number</type>
+    </fields>
+    <label>Employment Survey</label>
+    <nameField>
+        <displayFormat>ES-{YYYY}{MM}-{00000}</displayFormat>
+        <label>Employment Survey Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Employment Surveys</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>Family_Business_or_Starting_a_Business</fullName>
+        <active>true</active>
+        <errorConditionFormula>(ISPICKVAL( What_are_you_doing_now__c ,&quot;Working for my family business&quot;) ||
+ISPICKVAL( What_are_you_doing_now__c ,&quot;Starting a business&quot;)|| 
+(ISPICKVAL( What_are_you_doing_now__c ,&quot;Working as an intern at a company&quot;)&amp;&amp; ISBLANK( TS_Internship_Application__c )) )
+&amp;&amp;
+(
+ISBLANK( Start_Date__c )||
+ISBLANK( Salary_if_any_in_USD__c )||
+ISBLANK( Job_Title_Bus__c )||
+(ISBLANK( Company_Bus__c )&amp;&amp;ISBLANK( Name_of_Bus__c ))
+)
+&amp;&amp;
+ISPICKVAL(Status__c , &apos;Publish&apos;)</errorConditionFormula>
+        <errorDisplayField>Name_of_Bus__c</errorDisplayField>
+        <errorMessage>You are in &apos;publish&apos; mode. You have selected &apos;Family Business&apos;, &apos;Internship&apos; or &apos;Starting a Business&apos; in &apos;What are you doing now?&apos;. You must complete the fields in this section</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Family_Business_or_Starting_a_Business2</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+	NOT(ISPICKVAL( What_are_you_doing_now__c ,&quot;Starting a business&quot;)),
+	NOT(ISPICKVAL( What_are_you_doing_now__c ,&quot;Working for my family business&quot;)),
+        NOT(ISPICKVAL( What_are_you_doing_now__c ,&quot;Working as an intern at a company&quot;)),
+		OR(NOT(ISBLANK( Company_Bus__c )),
+			NOT(ISBLANK( Name_of_Bus__c )) ,
+			NOT(ISBLANK(TEXT( Industry_Bus__c ))),
+			NOT(ISBLANK( City_Bus__c )),
+			NOT(ISBLANK(TEXT( Type__c ))),
+			NOT(ISBLANK( Start_Date__c )),
+			NOT(ISBLANK( Salary_if_any_in_USD__c )),
+			NOT(ISBLANK( Job_Title_Bus__c ))))</errorConditionFormula>
+        <errorDisplayField>Company_Bus__c</errorDisplayField>
+        <errorMessage>The student has not received a job offer based on your answer to &apos;What are you doing now?&apos; so the job detail fields should remain blank.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Family_or_Non_Family_Offer</fullName>
+        <active>true</active>
+        <description>Cannot enter job details into both the Family/Intern offer section as well as the standard offer section.</description>
+        <errorConditionFormula>OR( NOT(ISBLANK( Company_Bus__c )) ,
+    NOT(ISBLANK( Name_of_Bus__c )))
+&amp;&amp;
+
+OR( NOT(ISBLANK( Offer_Company_Name__c )) ,
+    NOT(ISBLANK( Offer_Company__c )))</errorConditionFormula>
+        <errorMessage>You cannot enter job offer details in both the standard job offer details section and the family/starting/internship offer section.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Name_of_business_lookup_OR_text</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(ISBLANK(Name_of_Bus__c )) &amp;&amp;
+NOT(ISBLANK( Company_Bus__c  ))</errorConditionFormula>
+        <errorDisplayField>Company_Bus__c</errorDisplayField>
+        <errorMessage>Please select the company name from this field or enter in the field below, but not both.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Non_TS_Company_Details_are_mandatory</fullName>
+        <active>true</active>
+        <description>Non TS</description>
+        <errorConditionFormula>AND(
+   OR (NOT(ISBLANK( Offer_Company_Name__c )) ,
+       NOT(ISBLANK( Offer_Company__c ))) ,
+   ISBLANK(TEXT( Industry__c )) ,
+   ISPICKVAL(Status__c , &apos;Publish&apos;)
+   )</errorConditionFormula>
+        <errorDisplayField>Ownership_Type__c</errorDisplayField>
+        <errorMessage>You are in &apos;publish&apos; mode. Please complete the Company Ownership Type and Industry fields</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Non_TS_Company_or_Name_Mandatory</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+	ISBLANK( TS_Application__c ) ,
+	Can_t_find_on_TS__c =FALSE,
+	NOT(ISBLANK( Job_Title__c )),
+	ISBLANK( Offer_Company__c ),
+	ISBLANK( Offer_Company_Name__c ))
+&amp;&amp;
+ISPICKVAL(Status__c , &apos;Publish&apos;)</errorConditionFormula>
+        <errorDisplayField>Offer_Company__c</errorDisplayField>
+        <errorMessage>You are in &apos;publish&apos; mode. You have entered a Job Title but no company name. Please enter the company name to proceed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Non_TS_Job_Title_Mandatory</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+	ISBLANK( TS_Application__c ) ,
+	Can_t_find_on_TS__c =FALSE,
+		OR(
+			NOT(ISBLANK( Offer_Company__c )),
+			NOT(ISBLANK( Offer_Company_Name__c ))),
+	ISBLANK( Job_Title__c ))
+&amp;&amp;
+ISPICKVAL(Status__c , &apos;Publish&apos;)</errorConditionFormula>
+        <errorDisplayField>Job_Title__c</errorDisplayField>
+        <errorMessage>You are in &apos;publish&apos; mode. You have entered a company name but no Job Title, please enter the job title to proceed.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Non_TS_Offer_Job_Details_are_mandatory</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+NOT(ISBLANK( Job_Title__c) ),
+OR(
+ISBLANK( Job_City__c  ),
+ISBLANK(TEXT( Job_Function__c ) ),
+ISBLANK( TEXT( Job_Industry__c  ))
+))
+&amp;&amp;
+ISPICKVAL(Status__c , &apos;Publish&apos;)</errorConditionFormula>
+        <errorDisplayField>Job_Function__c</errorDisplayField>
+        <errorMessage>You are in &apos;publish&apos; mode. Please complete all Job details (City, Job Function, Job Industry)</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Offer_Company_lookup_field_or_text</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(ISBLANK( Offer_Company__c )) &amp;&amp;
+NOT(ISBLANK( Offer_Company_Name__c ))</errorConditionFormula>
+        <errorDisplayField>Offer_Company__c</errorDisplayField>
+        <errorMessage>Please select the company name from this field or enter in the field below, but not both.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Offer_Dates_Hierachy</fullName>
+        <active>true</active>
+        <description>Accepted date cannot be greater than Start Date and Offer Date cannot be greater than Accepted Date.</description>
+        <errorConditionFormula>(Offer_Accepted_Date__c &gt;  Employment_Start_Date__c
+||
+Offer_Received_Date__c &gt;  Offer_Accepted_Date__c)</errorConditionFormula>
+        <errorDisplayField>Offer_Received_Date__c</errorDisplayField>
+        <errorMessage>Offer Accepted Date must be before Employment Start Date.
+Offer Received Date must be before the Offer Accepted Date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Offer_Undecided_Draft_Mode</fullName>
+        <active>true</active>
+        <description>Undecided job offers must be saved in &apos;draft&apos; mode.</description>
+        <errorConditionFormula>ISPICKVAL( Status__c , &apos;publish&apos; ) 
+&amp;&amp; 
+ISPICKVAL( Are_you_currently_looking_for_a_job__c , &apos;have an offer but undecided&apos;)</errorConditionFormula>
+        <errorDisplayField>Status__c</errorDisplayField>
+        <errorMessage>You cannot publish a job offer whilst it is undecided. Please select status = draft. When the student has decided to accept or reject the offer, please return and edit the employment survey with updated info and change status to &apos;publish&apos;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Offer_dates_mandatory</fullName>
+        <active>true</active>
+        <description>Offer receive and accept dates are mandatory if entering job offer</description>
+        <errorConditionFormula>AND( 
+OR( 
+NOT(ISBLANK( TS_Application__c )) , 
+NOT(ISBLANK( Offer_Company__c )) , 
+NOT(ISBLANK( Offer_Company_Name__c )) 
+) , 
+OR( 
+ISBLANK( Offer_Accepted_Date__c ) , 
+ISBLANK( Offer_Received_Date__c )
+) 
+)
+&amp;&amp;
+ISPICKVAL(Status__c , &apos;Publish&apos;)
+&amp;&amp;
+ISPICKVAL(What_are_you_doing_now__c , &apos;I have already accepted an offer&apos;)</errorConditionFormula>
+        <errorDisplayField>Offer_Received_Date__c</errorDisplayField>
+        <errorMessage>You are in &apos;publish&apos; mode. If you are entering a job offer, you must complete the job offer date fields.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Previous_Job_Company_lookup_OR_text</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(ISBLANK( Previous_Job_Company__c )) &amp;&amp;
+NOT(ISBLANK ( Previous_Job_Company_Name__c ))</errorConditionFormula>
+        <errorDisplayField>Previous_Job_Company__c</errorDisplayField>
+        <errorMessage>Please select the company name from this field or enter in the field below, but not both.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>What_are_you_doing_now_is_mandatory</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK(TEXT(What_are_you_doing_now__c ))
+&amp;&amp;
+ISPICKVAL(Status__c , &apos;Publish&apos;)</errorConditionFormula>
+        <errorDisplayField>What_are_you_doing_now__c</errorDisplayField>
+        <errorMessage>You are in &apos;publish&apos; mode. Please select an answer for this question.</errorMessage>
+    </validationRules>
+</CustomObject>

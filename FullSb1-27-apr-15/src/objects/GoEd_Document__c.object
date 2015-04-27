@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>List of documents need to be uploaded by the student for goed loan.</description>
+    <enableActivities>true</enableActivities>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Applicant_Created__c</fullName>
+        <defaultValue>false</defaultValue>
+        <inlineHelpText>Created by Applicant from portal.</inlineHelpText>
+        <label>Applicant Created</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Approved_Date__c</fullName>
+        <description>When Document/attachment is Approved</description>
+        <label>Approved Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Approved__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is document/attachment Approved?</description>
+        <label>Approved?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>For__c</fullName>
+        <inlineHelpText>IS document related to Student or Cosigner 1 or Cosigner 2</inlineHelpText>
+        <label>For</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Student</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cosigner 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cosigner 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>GoEd__c</fullName>
+        <label>GoEd</label>
+        <referenceTo>GoEd__c</referenceTo>
+        <relationshipLabel>GoEd Documents</relationshipLabel>
+        <relationshipName>GoEd_Documents</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>Supplied_Date__c</fullName>
+        <description>When Document/attachment is supplied</description>
+        <label>Supplied Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Supplied__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is document/attachment uploaded?</description>
+        <label>Supplied?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Verified_Date__c</fullName>
+        <description>When document/attachment is verified</description>
+        <label>Verified Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Verified__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is document/attachment Verified?</description>
+        <label>Verified?</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Waived_Date__c</fullName>
+        <description>When Document/attachment is Waived</description>
+        <label>Waived Date</label>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Waived_Reason__c</fullName>
+        <description>Reason document is waived</description>
+        <inlineHelpText>Reason document is waived.</inlineHelpText>
+        <label>Waived Reason</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Waived__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is document/attachment Waived?</description>
+        <label>Waived?</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>GoEd Document</label>
+    <nameField>
+        <label>GoEd Document Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>GoEd Documents</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Waived_Reasons</fullName>
+        <active>true</active>
+        <description>waived Reason should not be blank when Waived checkbox is true.</description>
+        <errorConditionFormula>AND(Waived__c , ISBLANK( Waived_Reason__c ) )</errorConditionFormula>
+        <errorDisplayField>Waived_Reason__c</errorDisplayField>
+        <errorMessage>waived Reason should not be blank when Waived checkbox is true.</errorMessage>
+    </validationRules>
+</CustomObject>
